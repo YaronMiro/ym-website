@@ -20,6 +20,7 @@ export default {
 	},
 	fontFamily:{
 		primary: 'var(--font-jetBrainsMono)',
+		// secondary: 'var(--font-juliusSansOne)',
 	},
   	extend: {
   		colors: {
@@ -35,6 +36,7 @@ export default {
   			},
   			primary: {
   				DEFAULT: 'hsl(var(--primary))',
+				hover: 'hsl(var(--primary-hover))',
   				foreground: 'hsl(var(--primary-foreground))'
   			},
   			secondary: {
@@ -46,7 +48,8 @@ export default {
   				foreground: 'hsl(var(--muted-foreground))'
   			},
   			accent: {
-  				DEFAULT: 'hsl(var(--accent))',
+				DEFAULT: 'hsl(var(--accent))',
+				hover: 'hsl(var(--accent-hover))',
   				foreground: 'hsl(var(--accent-foreground))'
   			},
   			destructive: {
