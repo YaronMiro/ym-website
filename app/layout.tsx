@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono, Julius_Sans_One } from "next/font/google";
 import Header from '@/components/Header';
+import PageTransition from '@/components/PageTransition';
 import "./globals.css";
 
 
@@ -38,7 +39,9 @@ export default function RootLayout({
         className={`${fontsVars.join(' ')} antialiased`}
       >
         <Header />
-        {children}
+        <PageTransition>
+          { children }
+        </PageTransition>
       </body>
     </html>
   );
