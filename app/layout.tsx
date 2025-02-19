@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono, Julius_Sans_One } from "next/font/google";
+// import { JetBrains_Mono, Julius_Sans_One } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 import Header from '@/components/Header';
 import PageTransition from '@/components/PageTransition';
 import "./globals.css";
-import StairTransition from "@/components/StairTransition";
 
 
 const JetBrainsMono = JetBrains_Mono({
@@ -40,7 +40,6 @@ export default function RootLayout({
         className={`${fontsVars.join(' ')} antialiased`}
       >
         <Header />
-        <StairTransition />
         <PageTransition>
           { children }
         </PageTransition>

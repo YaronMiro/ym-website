@@ -3,6 +3,7 @@ import * as React from "react"
 import Link from "next/link";
 import { Button } from '@/components/ui/button';
 import Nav from '@/components/Nav';
+import MobileNav from '@/components/MobileNav';
 
 
 const Header: React.FC = () => {
@@ -11,7 +12,7 @@ const Header: React.FC = () => {
             <div className="container mx-auto flex justify-between items-center">
                 <Link href="/">
                     <h1 className="text-4xl font-semibold">
-                        Yaron Miro <span className="text-accent">.</span>
+                        Yaron<span className="text-accent">.</span>
                     </h1>
                 </Link>
 
@@ -19,13 +20,13 @@ const Header: React.FC = () => {
                <div className="hidden xl:flex items-center gap-8">
                     <Nav />
                     <Link href="/contact">
-                        <Button className="bg-primary-foreground hover:bg-primary-hover text-white">Contact me</Button>
+                        <Button>Contact me</Button>
                     </Link>
                </div>
 
                 {/* Mobile nav */}
                 <div className="xl:hidden">
-                    mobile nav
+                    <MobileNav />
                 </div>
             </div>
         </header>

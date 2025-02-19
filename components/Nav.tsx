@@ -3,25 +3,13 @@
 import * as React from "react"
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
-
-const links = [
-   {
-        name: 'home',
-        path: '/',
-   },
-   {
-        name: 'resume',
-        path: '/resume',
-   },
-];
-
+import { NAV_LINKS } from "@/lib/constants/navLinks";
 
 const Nav: React.FC = () => {
     const pathName = usePathname();
     return (
         <nav className="flex gap-8">
-            {links.map(({name, path}) => {
+            {NAV_LINKS.map(({name, path}) => {
                 return (
                     <Link
                         className={`${
