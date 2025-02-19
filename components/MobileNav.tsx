@@ -6,6 +6,7 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { CiMenuFries } from 'react-icons/ci';
 import { usePathname } from "next/navigation";
 import { NAV_LINKS } from "@/lib/constants/navLinks";
+import Logo from "@/components/Logo";
 
 const MobileNav: React.FC = () => {
     const pathName = usePathname();
@@ -16,11 +17,7 @@ const MobileNav: React.FC = () => {
             </SheetTrigger>
             <SheetContent className="flex flex-col">
                 {/* Logo */}
-                <div className="mt-32 mb-40 text-center text-2xl">
-                    <Link href="/">
-                        <h1 className="text-4xl font-semibold">Yaron<span className="text-accent">.</span></h1>                    
-                    </Link>
-                </div>
+                    <Logo className="mt-28 mb-16 text-center text-5xl" />
                 <nav className="flex flex-col justify-center items-center gap-8">
                     {NAV_LINKS.map(({name, path}) => {
                         return (

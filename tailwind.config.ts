@@ -19,7 +19,7 @@ export default {
 	},
 	fontFamily:{
 		primary: 'var(--font-jetBrainsMono)',
-		// secondary: 'var(--font-juliusSansOne)',
+		logo: 'var(--font-pixelifySansFont)',
 	},
   	extend: {
   		colors: {
