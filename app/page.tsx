@@ -1,6 +1,11 @@
 import Social from "@/components/Social";
 import { Button } from "@/components/ui/button";
 import React from "react";
+import Image from 'next/image'
+
+import heroImage from '@/public/hero-image-2.png'
+
+
 
 import { FiDownload } from "react-icons/fi";
 
@@ -37,7 +42,13 @@ const Home: React.FC = () => {
               </div>
             </div>
           </div>
-          <div>photo</div>
+          <div>
+            <Image
+              src={heroImage}
+              width={500}
+              height={500}
+              alt="Image of Yaron Miro"
+          /></div>
        </div>
       </div>
     </section>
