@@ -1,13 +1,10 @@
-import Social from "@/components/Social";
-import { Button } from "@/components/ui/button";
 import React from "react";
 import Image from 'next/image'
-
-import heroImage from '@/public/hero-image-2.png'
-
-
-
 import { FiDownload } from "react-icons/fi";
+import Social from "@/components/Social";
+import { Button } from "@/components/ui/button";
+import BackgroundParticles from "@/components/BackgroundParticles";
+import heroImage from '@/public/hero-image-2.png'
 
 const Home: React.FC = () => {
   return (
@@ -42,7 +39,8 @@ const Home: React.FC = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div className="relative">
+            <BackgroundParticles />
             <Image
               src={heroImage}
               width={500}

@@ -23,7 +23,8 @@ const Social: React.FC<SocialProps> = ({ className, iconStyles }) => {
                         <Link
                             key={id}
                             href={path}
-                            className={`flex justify-center items-center border border-white/80 rounded-full w-10 h-10 text-accent text-base hover:bg-accent hover:text-primary hover:border-accent hover:transition-all duration-500 ${iconStyles}`}
+                            className={`flex justify-center items-center rounded-full w-10 h-10 bg-white/80 text-primary text-base hover:text-primary hover:bg-accent-hover ${iconStyles}`}
+
                         >
                             {icon}
                         </Link>
