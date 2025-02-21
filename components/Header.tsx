@@ -10,7 +10,7 @@ import Logo from "@/components/Logo";
 
 const Header: React.FC = () => {
     return (
-        <header className="py-8 xl:py-12 text-white">
+        <header className="xl:mt-10 xl:mb-14 py-8 xl:py-12 text-white">
             <div className="container mx-auto flex justify-between items-center">
                <Logo className="text-6xl" />
 

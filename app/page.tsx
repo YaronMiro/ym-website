@@ -16,13 +16,13 @@ const Home: React.FC = () => {
     <>
       <section className="h-full">
         <div className="container mx-auto h-full">
-          <div className="relative flex flex-col xl:flex-row items-center justify-between xl:pt-8">
+          <div className="relative flex flex-col xl:flex-row items-center justify-between">
             <div className="text-center xl:text-left bg-primary">
               <div className="flex align-center leading-[25px] gap-3">
                 <span className="text-[28px]">Senior Fullstack Developer</span>
                 <BsCodeSlash role="img" aria-label="developer icon" className="inline rounded-full p-[4px] w-[30px] h-[30px] border border-secondary/70 text-secondary/70" />
               </div>
-              <h1 className="h1 mb-4 mt-1">
+              <h1 className="h1 mb-4 mt-2">
                 <span className="text-6xl text-white/65"> Hello I&apos;m <br /> </span><span className="text-accent">Yaron Miro</span>
               </h1>
               <div className="max-w-[500px] mb-9 leading-8 text-white/80">
@@ -43,7 +43,7 @@ const Home: React.FC = () => {
                   <FiDownload className="text-xl" />
                 </Button>
                 <div className="mb-8">
-                  <Social className="flex xl:flex-row mt-2 gap-6" />
+                  <Social className="flex xl:flex-row gap-6" />
                 </div>
               </div>
             </div>
@@ -51,7 +51,7 @@ const Home: React.FC = () => {
               <ParticlesContainer className="absolute top-0 right-0 bottom-0  w-[55%] h-[85%] z-[-9999]" />
               <div className="relative">
                 <Image
-                  className="mr-28"
+                  className="mr-24"
                   src={heroImage}
                   height={650}
                   alt="Image of Yaron Miro"
@@ -73,7 +73,7 @@ const Home: React.FC = () => {
            </div>
           </div>
         </div>
-        <Separator className="w-[55%] mx-auto mt-10 bg-white/50" />
+        <Separator className="w-[75%] mx-auto mt-20 bg-white/30" />
       </section>
     </>
     
