@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   viewBox="0 0 19.990616 22.259414"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs id="defs1">
+    <linearGradient id="swatch33">
+      <stop style="stop-color:#000000;stop-opacity:1;" offset="0" id="stop33" />
+    </linearGradient>
+  </defs>
+
+  <!-- Remove all inline stroke properties here -->
+  <path
+    fill="none"
+    stroke-width="0.5"
+    stroke-linecap="round"
+    stroke-dasharray="none"
+    stroke-opacity="1"
+    d="m 5.6519497,21.006669 -0.20102,-8.74458 c 0,0 0,-1.30667 -0.63658,-1.97675 -0.63658,-0.6700833 -0.56957,-0.7705963 -0.56957,-0.7705963"
+    id="path3" />
+  <path
+    fill="none"
+    stroke-width="0.5"
+    stroke-linecap="round"
+    stroke-dasharray="none"
+    stroke-opacity="1"
+    d="m 7.3941697,17.823779 -0.067,-10.0512533"
+    id="path4" />
+  <path
+    fill="none"
+    stroke-width="0.5"
+    stroke-linecap="round"
+    stroke-dasharray="none"
+    stroke-opacity="1"
+    d="m 9.5049297,18.627879 -0.0335,-9.2806573 c 0,0 0.7370903,-1.641704 1.3066603,-2.144267 0.56957,-0.502562 0.60308,-0.502562 0.60308,-0.502562"
+    id="path5" />
+  <path
+    fill="none"
+    stroke-width="0.5"
+    stroke-linecap="round"
+    stroke-dasharray="none"
+    stroke-opacity="1"
+    d="m 11.61569,17.086689 -0.10051,-4.7576 c 0,0 0.90461,-1.07213 1.23966,-1.34016 0.33504,-0.26804 0.33504,-0.26804 0.33504,-0.26804"
+    id="path6" />
+  <circle
+    fill="none"
+    stroke-width="0.5"
+    stroke-linecap="round"
+    stroke-dasharray="none"
+    stroke-opacity="1"
+    id="path7"
+    cx="4.110765"
+    cy="-8.3420916"
+    r="1.2061502"
+    transform="scale(1,-1)" />
+  <circle
+    fill="none"
+    stroke-width="0.5"
+    stroke-linecap="round"
+    stroke-dasharray="none"
+    stroke-opacity="1"
+    id="path7-8"
+    cx="7.3808303"
+    cy="-6.2882204"
+    r="1.2061502"
+    transform="scale(1,-1)" />
+  <circle
+    fill="none"
+    stroke-width="0.5"
+    stroke-linecap="round"
+    stroke-dasharray="none"
+    stroke-opacity="1"
+    id="path7-8-6"
+    cx="12.486451"
+    cy="-5.4943666"
+    r="1.2061502"
+    transform="scale(1,-1)" />
+  <circle
+    fill="none"
+    stroke-width="0.5"
+    stroke-linecap="round"
+    stroke-dasharray="none"
+    stroke-opacity="1"
+    id="path7-8-6-1"
+    cx="14.241685"
+    cy="-9.9839296"
+    r="1.2061502"
+    transform="scale(1,-1)" />
+  <path
+    fill="none"
+    stroke-width="0.7"
+    stroke-linecap="round"
+    stroke-dasharray="none"
+    stroke-opacity="1"
+    d="m 2.1534097,20.398389 c 0,0 0.89172,-1.90232 0.71337,-3.6263 -0.17834,-1.72399 -0.23779,-2.19957 -0.89171,-3.21018 C 1.3211397,12.551299 -0.64063031,10.232844 0.96445969,6.0715077 1.9156197,4.3475257 4.1151897,0.06729461 9.7627097,0.36453261 14.99411,0.72121861 18.82061,5.2039317 17.78296,9.3619077 c -0.37456,1.5009013 0.67976,2.5121613 0.67976,2.5121613 0,0 1.36671,1.25703 1.14958,1.78435 -0.21713,0.52732 -0.4963,0.80649 -0.74445,0.80649 -0.24815,0 -0.83751,-0.062 -0.86853,0.55834 -0.031,0.62037 0.27917,1.39584 -0.093,1.9852 -0.37223,0.58936 -0.83751,0.93056 -0.43426,1.67501 0.36549,0.67473 -0.71344,2.66762 -2.48151,2.10928 -0.71343,-0.62038 -2.10927,-1.76808 -2.41945,-0.6514 0,0.62037 -0.031,1.76807 -0.031,1.76807"
+    id="path2" />
+</svg>

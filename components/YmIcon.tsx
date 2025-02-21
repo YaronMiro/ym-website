@@ -3,16 +3,21 @@ import { ReactSVG } from 'react-svg';
 
 
 interface YmIconProps {
-    icon?: string;
+    icon: "head" | "app-code"
     className: string;
 }
 
-const YmIcon: React.FC<YmIconProps> = ({ className, icon = '' }) => {
+const iconsMapping = {
+    "head": "ym-icon-head.svg",
+    "app-code": "ym-icon-app-code.svg",
+};
+
+const YmIcon: React.FC<YmIconProps> = ({ className, icon }) => {
     return (
         <div>
             {}
             <ReactSVG
-                src="/ym-icon-head.svg"
+                src={`/icons/${iconsMapping[icon]}`}
                 className={className}
             />
         </div>

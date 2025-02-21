@@ -63,9 +63,10 @@ const Home: React.FC = () => {
               </div>
           </div>
           <div className="flex justify-end mt-1 pr-8">
-            <YmIcon
-              className="w-14 stroke-secondary/70"
-            />
+           <div className="flex gap-8 items-center">
+              <YmIcon className="w-14 stroke-secondary/70" icon="head"/>
+              <YmIcon className="w-14 stroke-secondary/70" icon="app-code"/>
+           </div>
           </div>
         </div>
         <Separator className="w-[55%] mx-auto mt-14 bg-white/50" />
