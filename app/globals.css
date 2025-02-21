@@ -25,7 +25,7 @@
 
     --primary-hover: 240 3% 18%;
 
-    --secondary: 210 40% 96.1%;
+    --secondary: 23 89% 48%;
 
     --secondary-foreground: 222.2 47.4% 11.2%;
 
@@ -80,8 +80,8 @@
 
     --primary-foreground: 222.2 47.4% 11.2%;
 
-    --secondary: 217.2 32.6% 17.5%;
-
+    --secondary: 23 89% 48%;
+    
     --secondary-foreground: 210 40% 98%;
 
     --muted: 217.2 32.6% 17.5%;
@@ -150,7 +150,7 @@
 
   .bottom-bg-fade {
     /* For now use hardcoded value, this needs to be replaced with css var --primary */
-    /* background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 4%); */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 15%);
   }
 
   .left-bg-fade {

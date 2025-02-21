@@ -6,9 +6,9 @@ import { FiDownload } from "react-icons/fi";
 import { BsCodeSlash } from "react-icons/bs";
 import Social from "@/components/Social";
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
+import GradientLine from "@/components/GradientLine";
 
-import BackgroundParticles from '@/components/BackgroundParticles'
+import ParticlesContainer from '@/components/ParticlesContainer'
 import heroImage from '@/public/hero-image-2.png'
 
 const Home: React.FC = () => {
@@ -20,7 +20,7 @@ const Home: React.FC = () => {
             <div className="text-center xl:text-left bg-primary">
               <div className="flex align-center leading-[25px] gap-3">
                 <span className="text-[28px]">Senior Fullstack Developer</span>
-                <BsCodeSlash role="img" aria-label="rocket" className="inline rounded-full p-[4px] w-6 h-6 border border-accent text-accent text-[11px]" />
+                <BsCodeSlash role="img" aria-label="rocket" className="inline rounded-full p-[4px] w-6 h-6 border border-secondary text-secondary text-[11px]" />
                 {/* <BsCodeSlash role="img" aria-label="rocket" className="inline text-accent ml-2 text-[18px]" /> */}
               </div>
               <h1 className="h1 mb-4 mt-1">
@@ -44,12 +44,12 @@ const Home: React.FC = () => {
                   <FiDownload className="text-xl" />
                 </Button>
                 <div className="mb-8">
-                  <Social className="flex xl:flex-row gap-6" />
+                  <Social className="flex xl:flex-row mt-2 gap-6" />
                 </div>
               </div>
             </div>
             <div>
-              <BackgroundParticles className="absolute top-0 bottom-0 right-0 w-[50%] h-full z-[-9999]" />
+              <ParticlesContainer className="absolute top-0 right-0 bottom-0  w-[50%] h-full z-[-9999]" />
               <div className="relative">
                 <Image
                   className="mr-20"
@@ -61,9 +61,9 @@ const Home: React.FC = () => {
               </div>
               </div>
           </div>
+          <GradientLine className="ml-16 w-[35%]" />
         </div>
       </section>
-      <Separator className="w-[60%] mx-auto" />
     </>
     
   );

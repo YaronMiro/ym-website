@@ -31,7 +31,7 @@ const Social: React.FC<SocialProps> = ({ className, iconStyles }) => {
                                 >
                                     {icon}
                                 </div>
-                                <span className="hidden xl:flex capitalize ml-[8px] text-accent group-hover:text-accent-hover group-hover:transition-all duration-1000 ease-in-out">
+                                <span className="hidden xl:flex capitalize underline ml-[8px] text-accent group-hover:text-accent-hover group-hover:transition-all duration-1000 ease-in-out">
                                     {name}
                                 </span>
                            </div>
