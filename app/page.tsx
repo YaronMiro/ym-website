@@ -4,6 +4,7 @@ import React from "react";
 import Image from 'next/image'
 import { FiDownload } from "react-icons/fi";
 import { BsCodeSlash } from "react-icons/bs";
+import { IoIosArrowRoundForward } from "react-icons/io";
 import Social from "@/components/Social";
 import { Button } from "@/components/ui/button";
 import ParticlesContainer from '@/components/ParticlesContainer'
@@ -60,7 +61,7 @@ const Home: React.FC = () => {
               </div>
               </div>
           </div>
-          <div className="flex justify-end pr-9">
+          {/* <div className="flex justify-end pr-9">
             <div className="flex gap-8 items-center stroke-secondary/70">
               <YmIcon className="ym-icon" icon="head"/>
               <YmIcon className="ym-icon" icon="app-code"/>
@@ -71,6 +72,25 @@ const Home: React.FC = () => {
               <YmIcon className="ym-icon" icon="bug-tracker" />
               <YmIcon className="ym-icon" icon="todo-list" />
            </div>
+          </div> */}
+            <div className="flex justify-end">
+              <div className="flex gap-1 items-center stroke-secondary/70">
+                <YmIcon className="ym-icon" icon="head" />
+                <IoIosArrowRoundForward className="text-3xl text-white/40 mx-1" />
+                <YmIcon className="ym-icon" icon="app-code" />
+                <IoIosArrowRoundForward className="text-3xl text-white/40 mx-1 -rotate-45" />
+                <YmIcon className="ym-icon" icon="api" />
+                <IoIosArrowRoundForward className="text-3xl text-white/40 mx-1 rotate-45" />
+                <YmIcon className="ym-icon" icon="ui" />
+                <IoIosArrowRoundForward className="text-3xl text-white/40 mx-1" />
+                <YmIcon className="ym-icon" icon="cloud-shield" />
+                <IoIosArrowRoundForward className="text-3xl text-white/40 mx-1 -rotate-45" />
+                <YmIcon className="ym-icon" icon="cloud-balancer" />
+                <IoIosArrowRoundForward className="text-3xl text-white/40 mx-1 rotate-45" />
+                <YmIcon className="ym-icon" icon="bug-tracker" />
+                <IoIosArrowRoundForward className="text-3xl text-white/40 mx-1" />
+                <YmIcon className="ym-icon" icon="todo-list" />
+              </div>
           </div>
         </div>
         <Separator className="w-[75%] mx-auto mt-20 bg-white/30" />
