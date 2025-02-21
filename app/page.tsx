@@ -7,9 +7,9 @@ import { BsCodeSlash } from "react-icons/bs";
 import Social from "@/components/Social";
 import { Button } from "@/components/ui/button";
 import ParticlesContainer from '@/components/ParticlesContainer'
+import YmIcon from '@/components/YmIcon'
 import heroImage from '@/public/hero-image-2.png'
-import techCollectionIcons from '@/public/tech-collection-icons.png';
-import icons from '@/public/icons.svg';
+import ymIconHead from '@/public/ym-icon-head.svg';
 import { Separator } from "@/components/ui/separator";
 
 
@@ -63,10 +63,8 @@ const Home: React.FC = () => {
               </div>
           </div>
           <div className="flex justify-end mt-1 pr-8">
-            <Image
-              className="opacity-[0.4] w-[62%] text-accent"
-              src={icons}
-              alt="tech collection icons illustration"
+            <YmIcon
+              className="w-14 stroke-secondary/70"
             />
           </div>
         </div>
