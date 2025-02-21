@@ -6,10 +6,12 @@ import { FiDownload } from "react-icons/fi";
 import { BsCodeSlash } from "react-icons/bs";
 import Social from "@/components/Social";
 import { Button } from "@/components/ui/button";
-import GradientLine from "@/components/GradientLine";
-
 import ParticlesContainer from '@/components/ParticlesContainer'
 import heroImage from '@/public/hero-image-2.png'
+import techCollectionIcons from '@/public/tech-collection-icons.png';
+import icons from '@/public/icons.svg';
+import { Separator } from "@/components/ui/separator";
+
 
 const Home: React.FC = () => {
   return (
@@ -51,17 +53,24 @@ const Home: React.FC = () => {
               <ParticlesContainer className="absolute top-0 right-0 bottom-0  w-[55%] h-[85%] z-[-9999]" />
               <div className="relative">
                 <Image
-                  className="mr-20"
+                  className="mr-28"
                   src={heroImage}
-                  height={700}
+                  height={650}
                   alt="Image of Yaron Miro"
                 />
                 <div className="bottom-bg-fade absolute top-0 bottom-0 left-0 right-0 z-50"></div>
               </div>
               </div>
           </div>
-          <GradientLine className="ml-8 w-[40%]" />
+          <div className="flex justify-end mt-1 pr-8">
+            <Image
+              className="opacity-[0.4] w-[62%] text-accent"
+              src={icons}
+              alt="tech collection icons illustration"
+            />
+          </div>
         </div>
+        <Separator className="w-[55%] mx-auto mt-14 bg-white/50" />
       </section>
     </>
     

@@ -1,5 +1,8 @@
 import React from "react";
 
+import { cn } from "@/lib/utils"
+
+
 interface GradientLineProps {
     className?: string;
     orientation?: "horizontal" | "vertical";
@@ -20,7 +23,7 @@ const GradientLine: React.FC<GradientLineProps> = ({ orientation = "horizontal",
         <div
             className={`${isVertical
                 ? `h-32 w-[2px] bg-gradient-to-${directionMap[direction]} from-white to-transparent`
-                : `w-full h-[2px] bg-gradient-to-${directionMap[direction]} from-white to-transparent`
+                : `h-[2px] bg-gradient-to-${directionMap[direction]} from-white to-transparent`
                 }` + ` ${className}`
             }
         />

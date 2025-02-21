@@ -87,6 +87,8 @@ const ParticlesContainer: React.FC<ParticlesContainerProps> = ({ className }) =>
                 },
                 color: {
                     value: "#ffffff",
+                    // value: "#ff7b0d", // Orange
+
                 },
                 effect: {
                     close: true,
@@ -113,13 +115,14 @@ const ParticlesContainer: React.FC<ParticlesContainerProps> = ({ className }) =>
                 },
                 opacity: {
                     value: {
-                        min: 0.3,
+                        min: 0.7,
+                        // max: 0.5
                         max: 0.8
                     },
                     animation: {
                         count: 0,
                         enable: true,
-                        speed: 0.5,
+                        speed: 0.1,
                         decay: 0,
                         delay: 0,
                         sync: false,
@@ -138,7 +141,7 @@ const ParticlesContainer: React.FC<ParticlesContainerProps> = ({ className }) =>
                 size: {
                     value: {
                         min: 2,
-                        max: 4
+                        max: 7,
                     },
                     animation: {
                         count: 0,
@@ -268,7 +271,8 @@ const ParticlesContainer: React.FC<ParticlesContainerProps> = ({ className }) =>
                     blink: false,
                     color: {
                         // @todo Fix using theme color
-                        value: "#FFFFFF"
+                        // value: "#FFFFFF" // White
+                        value: "#15c1b0" // Primary
                     },
                     consent: false,
                     distance: 150,
