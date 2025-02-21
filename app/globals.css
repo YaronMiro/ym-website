@@ -148,7 +148,7 @@
 
   .bottom-bg-fade {
     /* @todo Fix using theme color */
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 15%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 10%);
   }
    
 }

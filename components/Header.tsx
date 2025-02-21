@@ -1,6 +1,5 @@
 import * as React from "react"
 
-import Link from "next/link";
 import { Button } from '@/components/ui/button';
 import { FiDownload } from "react-icons/fi";
 import Nav from '@/components/Nav';
