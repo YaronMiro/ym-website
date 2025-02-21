@@ -20,11 +20,10 @@ const Home: React.FC = () => {
             <div className="text-center xl:text-left bg-primary">
               <div className="flex align-center leading-[25px] gap-3">
                 <span className="text-[28px]">Senior Fullstack Developer</span>
-                <BsCodeSlash role="img" aria-label="rocket" className="inline rounded-full p-[4px] w-6 h-6 border border-secondary text-secondary text-[11px]" />
-                {/* <BsCodeSlash role="img" aria-label="rocket" className="inline text-accent ml-2 text-[18px]" /> */}
+                <BsCodeSlash role="img" aria-label="developer icon" className="inline rounded-full p-[4px] w-[30px] h-[30px] border border-secondary text-secondary" />
               </div>
               <h1 className="h1 mb-4 mt-1">
-                <span className="text-6xl"> Hello I&apos;m <br /> </span><span className="text-accent">Yaron Miro</span>
+                <span className="text-6xl text-white/65"> Hello I&apos;m <br /> </span><span className="text-accent">Yaron Miro</span>
               </h1>
               <div className="max-w-[500px] mb-9 leading-8 text-white/80">
                 <p>
@@ -49,7 +48,7 @@ const Home: React.FC = () => {
               </div>
             </div>
             <div>
-              <ParticlesContainer className="absolute top-0 right-0 bottom-0  w-[50%] h-full z-[-9999]" />
+              <ParticlesContainer className="absolute top-0 right-0 bottom-0  w-[55%] h-[85%] z-[-9999]" />
               <div className="relative">
                 <Image
                   className="mr-20"
