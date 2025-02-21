@@ -78,12 +78,7 @@ const ParticlesContainer: React.FC<ParticlesContainerProps> = ({ className }) =>
                     },
                     onHover: {
                         enable: true,
-                        mode: "trail",
-                        parallax: {
-                            enable: false,
-                            force: 2,
-                            smooth: 10
-                        }
+                        mode: "repulse",
                     },
                     resize: {
                         delay: 0.5,
@@ -254,36 +249,7 @@ const ParticlesContainer: React.FC<ParticlesContainerProps> = ({ className }) =>
                     }
                 },
                 color: {
-                    value: "#ffffff",
-                    animation: {
-                        h: {
-                            count: 0,
-                            enable: true,
-                            speed: 1,
-                            decay: 0,
-                            delay: 0,
-                            sync: true,
-                            offset: 0
-                        },
-                        s: {
-                            count: 0,
-                            enable: false,
-                            speed: 1,
-                            decay: 0,
-                            delay: 0,
-                            sync: true,
-                            offset: 0
-                        },
-                        l: {
-                            count: 0,
-                            enable: false,
-                            speed: 1,
-                            decay: 0,
-                            delay: 0,
-                            sync: true,
-                            offset: 0
-                        }
-                    }
+                    value: "#e7610d",
                 },
                 effect: {
                     close: true,
@@ -398,12 +364,12 @@ const ParticlesContainer: React.FC<ParticlesContainerProps> = ({ className }) =>
                     close: true,
                     fill: true,
                     options: {},
-                    type: "circle"
+                    type: ["circle", "square"]
                 },
                 size: {
                     value: {
-                        min: 1,
-                        max: 3
+                        min: 2,
+                        max: 4
                     },
                     animation: {
                         count: 0,
@@ -561,6 +527,7 @@ const ParticlesContainer: React.FC<ParticlesContainerProps> = ({ className }) =>
                 links: {
                     blink: false,
                     color: {
+                        // @todo Fix using theme color
                         value: "#0dcaf0"
                     },
                     consent: false,

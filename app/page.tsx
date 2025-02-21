@@ -61,7 +61,7 @@ const Home: React.FC = () => {
               </div>
               </div>
           </div>
-          <GradientLine className="ml-16 w-[35%]" />
+          <GradientLine className="ml-8 w-[40%]" />
         </div>
       </section>
     </>
