@@ -8,15 +8,6 @@ interface BackgroundParticlesProps {
 }
 
 const BackgroundParticles: React.FC<BackgroundParticlesProps> = ({ className }) => {
-    useEffect(() => {
-        window.particlesJS.load("particles-js", '/particlesjs-config.json');
-
-        return () => {
-            if (window.particlesJS) {
-                delete window.particlesJS;
-            }
-        };
-    }, []);
     
     return (
         <div className={`${className}`}>

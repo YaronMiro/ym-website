@@ -2,7 +2,6 @@
 
 import React from "react";
 import Image from 'next/image'
-import Script from "next/script";
 import { FiDownload } from "react-icons/fi";
 import { BsCodeSlash } from "react-icons/bs";
 import Social from "@/components/Social";
@@ -11,22 +10,18 @@ import { Separator } from "@/components/ui/separator";
 
 import BackgroundParticles from '@/components/BackgroundParticles'
 import heroImage from '@/public/hero-image-2.png'
-import particlesJs from '@/lib/particles.js'
 
 const Home: React.FC = () => {
   return (
     <>
-    <Script
-        src={particlesJs}
-        strategy="lazyOnload"
-      />
       <section className="h-full">
         <div className="container mx-auto h-full">
           <div className="relative flex flex-col xl:flex-row items-center justify-between xl:pt-8">
             <div className="text-center xl:text-left bg-primary">
-              <div className="flex align-bottom gap-2">
+              <div className="flex align-center leading-[25px] gap-3">
                 <span className="text-[28px]">Senior Fullstack Developer</span>
-                <BsCodeSlash role="img" aria-label="rocket" className="text-[22px] text-accent inline" />
+                <BsCodeSlash role="img" aria-label="rocket" className="inline rounded-full p-[4px] w-6 h-6 border border-accent text-accent text-[11px]" />
+                {/* <BsCodeSlash role="img" aria-label="rocket" className="inline text-accent ml-2 text-[18px]" /> */}
               </div>
               <h1 className="h1 mb-4 mt-1">
                 <span className="text-6xl"> Hello I&apos;m <br /> </span><span className="text-accent">Yaron Miro</span>
