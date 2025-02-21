@@ -19,7 +19,7 @@ const Header: React.FC = () => {
                     <Nav />
                     <Button size="xs">
                         <span>Download CV</span>
-                        <FiDownload className="ml-3" />
+                        <FiDownload className="ml-3 text-[18px]" />
                     </Button>
                </div>
 
