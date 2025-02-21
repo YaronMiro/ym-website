@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="icon-cloid-shield"
+   viewBox="0 0 23.693161 20.131866"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="cloud-shield">
+    <linearGradient
+       id="swatch33">
+      <stop
+         style="stop-color:red;stop-opacity:1;"
+         offset="0"
+         id="stop33" />
+    </linearGradient>
+  </defs>
+  <g
+     id="g1"
+     transform="translate(-245.17555,-91.259287)">
+    <path
+       style="fill:none;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="m 251.86277,97.312573 c 0,0 0.70859,-2.881585 4.39324,-3.16502"
+       id="path47" />
+    <path
+       style="fill:none;stroke-width:0.85;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="m 251.59226,106.65623 c 0,0 -7.1751,1.59705 -5.82333,-4.85594 0.3022,-1.39578 1.95234,-2.594921 3.35398,-2.787108 0.0945,0 -0.0945,-6.566237 6.0466,-7.227585 0.56687,0 3.99979,-1.064495 6.64518,3.706655 0,0 5.57159,-1.463798 6.62901,5.221538 -0.0472,1.09358 -0.41284,5.98706 -5.60914,6.13785"
+       id="path48" />
+    <path
+       style="fill:none;stroke-width:0.664;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="m 252.66584,103.17022 4.29876,-1.55889 4.62943,1.55889 -0.89754,5.29078 -3.68465,2.59816 -3.63741,-2.73987 z"
+       id="path49" />
+    <path
+       style="fill:none;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="m 255.31123,105.95733 1.41717,1.18098 2.45644,-2.64539"
+       id="path50" />
+  </g>
+</svg>

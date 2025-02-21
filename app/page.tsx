@@ -9,9 +9,7 @@ import { Button } from "@/components/ui/button";
 import ParticlesContainer from '@/components/ParticlesContainer'
 import YmIcon from '@/components/YmIcon'
 import heroImage from '@/public/hero-image-2.png'
-import ymIconHead from '@/public/ym-icon-head.svg';
 import { Separator } from "@/components/ui/separator";
-
 
 const Home: React.FC = () => {
   return (
@@ -22,7 +20,7 @@ const Home: React.FC = () => {
             <div className="text-center xl:text-left bg-primary">
               <div className="flex align-center leading-[25px] gap-3">
                 <span className="text-[28px]">Senior Fullstack Developer</span>
-                <BsCodeSlash role="img" aria-label="developer icon" className="inline rounded-full p-[4px] w-[30px] h-[30px] border border-secondary text-secondary" />
+                <BsCodeSlash role="img" aria-label="developer icon" className="inline rounded-full p-[4px] w-[30px] h-[30px] border border-secondary/70 text-secondary/70" />
               </div>
               <h1 className="h1 mb-4 mt-1">
                 <span className="text-6xl text-white/65"> Hello I&apos;m <br /> </span><span className="text-accent">Yaron Miro</span>
@@ -62,14 +60,20 @@ const Home: React.FC = () => {
               </div>
               </div>
           </div>
-          <div className="flex justify-end mt-1 pr-8">
-           <div className="flex gap-8 items-center">
-              <YmIcon className="w-14 stroke-secondary/70" icon="head"/>
-              <YmIcon className="w-14 stroke-secondary/70" icon="app-code"/>
+          <div className="flex justify-end pr-9">
+            <div className="flex gap-8 items-center stroke-secondary/70">
+              <YmIcon className="ym-icon" icon="head"/>
+              <YmIcon className="ym-icon" icon="app-code"/>
+              <YmIcon className="ym-icon" icon="cloud-shield" />
+              <YmIcon className="ym-icon" icon="api" />
+              <YmIcon className="ym-icon" icon="ui" />
+              <YmIcon className="ym-icon" icon="cloud-balancer" />
+              <YmIcon className="ym-icon" icon="bug-tracker" />
+              <YmIcon className="ym-icon" icon="todo-list" />
            </div>
           </div>
         </div>
-        <Separator className="w-[55%] mx-auto mt-14 bg-white/50" />
+        <Separator className="w-[55%] mx-auto mt-10 bg-white/50" />
       </section>
     </>
     
