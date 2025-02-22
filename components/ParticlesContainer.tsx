@@ -136,12 +136,12 @@ const ParticlesContainer: React.FC<ParticlesContainerProps> = ({ className }) =>
                     close: true,    
                     fill: true,
                     options: {},
-                    type: ["square"]
+                    type: ["circle"]
                 },
                 size: {
                     value: {
-                        min: 2,
-                        max: 7,
+                        min: 1,
+                        max: 4,
                     },
                     animation: {
                         count: 0,

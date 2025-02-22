@@ -36,6 +36,7 @@ const Home: React.FC = () => {
                   Experienced in cloud technologies, DevOps, AI integration, and have a strong eye for design, all while consistently delivering high-quality, reliable software efficiently.
                 </p>
               </div>
+              <Social className="flex mt-10 gap-6" />
               <div className="flex flex-row items-center justify-center xl:justify-start mt-14 gap-8">
                 <Button
                   variant="outline"
@@ -51,7 +52,6 @@ const Home: React.FC = () => {
               <ParticlesContainer className="absolute top-0 right-0 bottom-0  w-[55%] h-[85%] z-[-9999]" />
               <div className="flex flex-col items-center">
               <Image
-                className=""
                 src={heroImage}
                 height={600}
                 alt="Image of Yaron Miro"
@@ -59,8 +59,7 @@ const Home: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col xl:flex-row justify-between mt-6">
-            <Social className="flex mt-2 gap-6" />
+          <div className="flex flex-col xl:flex-row justify-end items-center -mt-5">
             <div className="flex items-center stroke-white/40">
               <YmIcon className="ym-icon" icon="head" />
               <IoIosArrowRoundForward className="text-2xl text-secondary/70 mx-2" />
@@ -80,7 +79,7 @@ const Home: React.FC = () => {
             </div>
           </div>  
         </div>
-        <Separator className="mt-10 w-[60%] mx-auto bg-white/30" />
+        {/* <Separator className="mt-10  bg-white/30" /> */}
       </section>
     </>
     
