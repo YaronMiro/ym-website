@@ -50,38 +50,37 @@ const Home: React.FC = () => {
             </div>
             <div>
               <ParticlesContainer className="absolute top-0 right-0 bottom-0  w-[55%] h-[85%] z-[-9999]" />
-              <div className="relative">
+              <div className="relative mx-auto w-fit">
                 <Image
-                  className="xl:mr-32"
                   src={heroImage}
                   height={600}
                   alt="Image of Yaron Miro"
                 />
                 <div className="bottom-bg-fade absolute top-0 bottom-0 left-0 right-0 z-50"></div>
               </div>
-              </div>  
-          </div>  
-            <div className="flex xl:justify-end mr-10">
-              <div className="flex gap-1 items-center stroke-white/40">
-                <YmIcon className="ym-icon" icon="head" />
-              <IoIosArrowRoundForward className="text-2xl text-secondary/70 mx-1" />
-                <YmIcon className="ym-icon" icon="app-code" />
-              <IoIosArrowRoundForward className="text-2xl text-secondary/70 mx-1 -rotate-45" />
-                <YmIcon className="ym-icon" icon="api" />
-              <IoIosArrowRoundForward className="text-2xl text-secondary/70 mx-1 rotate-45" />
-                <YmIcon className="ym-icon" icon="ui" />
-              <IoIosArrowRoundForward className="text-2xl text-secondary/70 mx-1" />
-                <YmIcon className="ym-icon" icon="cloud-shield" />
-              <IoIosArrowRoundForward className="text-2xl text-secondary/70 mx-1 -rotate-45" />
-                <YmIcon className="ym-icon" icon="cloud-balancer" />
-              <IoIosArrowRoundForward className="text-2xl text-secondary/70 mx-1 rotate-45" />
-                <YmIcon className="ym-icon" icon="bug-tracker" />
-              <IoIosArrowRoundForward className="text-2xl text-secondary/70  mx-1" />
-                <YmIcon className="ym-icon" icon="todo-list" />
-            </div>
-          </div>
+              <div className="flex mt-6">
+                <div className="flex gap-1 items-center stroke-white/40">
+                  <YmIcon className="ym-icon" icon="head" />
+                  <IoIosArrowRoundForward className="text-2xl text-secondary/70 mx-1" />
+                  <YmIcon className="ym-icon" icon="app-code" />
+                  <IoIosArrowRoundForward className="text-2xl text-secondary/70 mx-1 -rotate-45" />
+                  <YmIcon className="ym-icon" icon="api" />
+                  <IoIosArrowRoundForward className="text-2xl text-secondary/70 mx-1 rotate-45" />
+                  <YmIcon className="ym-icon" icon="ui" />
+                  <IoIosArrowRoundForward className="text-2xl text-secondary/70 mx-1" />
+                  <YmIcon className="ym-icon" icon="cloud-shield" />
+                  <IoIosArrowRoundForward className="text-2xl text-secondary/70 mx-1 -rotate-45" />
+                  <YmIcon className="ym-icon" icon="cloud-balancer" />
+                  <IoIosArrowRoundForward className="text-2xl text-secondary/70 mx-1 rotate-45" />
+                  <YmIcon className="ym-icon" icon="bug-tracker" />
+                  <IoIosArrowRoundForward className="text-2xl text-secondary/70  mx-1" />
+                  <YmIcon className="ym-icon" icon="todo-list" />
+                </div>
+              </div>
+            </div>  
+          </div>    
         </div>
-        <Separator className="mt-20 bg-white/30" />
+        {/* <Separator className="mt-20 bg-white/30" /> */}
       </section>
     </>
     

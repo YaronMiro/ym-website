@@ -5,8 +5,6 @@ import { FiDownload } from "react-icons/fi";
 import Nav from '@/components/Nav';
 import MobileNav from '@/components/MobileNav';
 import Logo from "@/components/Logo";
-import { Separator } from "@/components/ui/separator";
-
 
 const Header: React.FC = () => {
     return (
