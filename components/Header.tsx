@@ -5,6 +5,7 @@ import { FiDownload } from "react-icons/fi";
 import Nav from '@/components/Nav';
 import MobileNav from '@/components/MobileNav';
 import Logo from "@/components/Logo";
+import { Separator } from "@/components/ui/separator";
 
 
 const Header: React.FC = () => {
@@ -27,6 +28,7 @@ const Header: React.FC = () => {
                     <MobileNav />
                 </div>
             </div>
+            {/* <Separator className="mt-20 bg-white/30" /> */}
         </header>
     );
 };

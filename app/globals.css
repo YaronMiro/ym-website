@@ -136,14 +136,14 @@
 
   .h3 {
     @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
-  }
+  } 
 
   .logo {
         @apply font-logo font-semibold;
-  }
+  } 
 
   .ym-icon {
-    @apply w-[3.2rem]
+    @apply w-[2.9rem]
   }
 
   .bottom-bg-fade {
