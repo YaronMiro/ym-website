@@ -27,11 +27,11 @@ const Social: React.FC<SocialProps> = ({ className, iconStyles }) => {
                             href={path}
                         >
                            <div className="flex items-center gap-1">
-                                <div className={`flex justify-center items-center bg-primary text-white/70 text-3xl group-hover:text-accent-hover group-hover:transition-all duration-1000 ease-in-out ${iconStyles}`}
+                                <div className={`flex justify-center items-center bg-primary text-accent/70 text-3xl group-hover:text-accent-hover group-hover:transition-all duration-1000 ease-in-out ${iconStyles}`}
                                 >
                                     {icon}
                                 </div>
-                                <span className="hidden xl:flex capitalize underline underline-offset-4 ml-[8px] text-accent/80 group-hover:text-accent-hover group-hover:transition-all duration-1000 ease-in-out">
+                                <span className="hidden xl:flex capitalize underline underline-offset-4 ml-[8px] text-accent/70 group-hover:text-accent-hover group-hover:transition-all duration-1000 ease-in-out">
                                     {name}
                                 </span>
                            </div>

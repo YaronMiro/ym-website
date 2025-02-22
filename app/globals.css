@@ -146,9 +146,14 @@
     @apply w-[2.9rem]
   }
 
-  .bottom-bg-fade {
-    /* @todo Fix using theme color */
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 10%);
+
+  .with-bottom-fade {
+    @apply relative;
   }
-   
+
+  .with-bottom-fade::after {
+    background: linear-gradient(0deg, #000 0%, #fff0 100%);
+    @apply absolute bottom-0 left-0 right-0 z-10 content-[''] h-[10%];
+  }
+
 }
