@@ -15,7 +15,7 @@ const Home: React.FC = () => {
   return (
     <>
       <section className="container">
-          <div className="xl:relative flex flex-col xl:flex-row items-center xl:items-start">
+          <div className="flex flex-col xl:flex-row items-center xl:items-start">
             <div>
               <h1 className="flex flex-col font-semibold">
                 <span className="text-5xl text-white">Hello I&apos;m</span>
@@ -35,16 +35,16 @@ const Home: React.FC = () => {
               </div>
               <Social className="flex mt-8 gap-6" />
             </div>
-            <div className="relative mt-20 flex justify-center xl:static flex-1">
-              <ParticlesContainer className="absolute bottom-0 right-0 left-0 xl:left-auto xl:top-0 xl:w-[55%] h-[80%] xl:h-[85%] z-[-9999]" />
+            <div className="relative mt-20 flex flex-1 justify-center">
+            <ParticlesContainer className="absolute bottom-12 w-full h-full z-[-9999] right-[-2rem] left-[-2rem] xl:right-0 xl:left-0" />
               <Image
+                className="w-full xl:w-auto xl:h-[600px]"
                 src={heroImage}
-                height={600}
                 alt="Image of Yaron Miro"
               />
             </div>
           </div>
-          <div className="flex flex-col xl:flex-row justify-end -mt-6">
+          <div className="flex flex-row justify-center items-center xl:justify-end -mt-6">
             {/* <Button
               variant="outline"
               size="lg"
@@ -53,21 +53,21 @@ const Home: React.FC = () => {
               <span>Download CV</span>
               <FiDownload className="text-xl" />
             </Button> */}
-            <div className="flex items-center stroke-white/40 z-50">
+            <div className="flex items-center stroke-white/60 z-50">
               <YmIcon className="ym-icon" icon="head" />
-              <IoIosArrowRoundForward className="text-2xl text-secondary/70 mx-2" />
+              <IoIosArrowRoundForward className="text-2xl text-secondary/80 mx-2" />
               <YmIcon className="ym-icon" icon="app-code" />
-              <IoIosArrowRoundForward className="text-2xl text-secondary/70 mx-2 -rotate-45" />
+              <IoIosArrowRoundForward className="text-2xl text-secondary/80 mx-2 -rotate-45" />
               <YmIcon className="ym-icon" icon="api" />
-              <IoIosArrowRoundForward className="text-2xl text-secondary/70 mx-2 rotate-45" />
+              <IoIosArrowRoundForward className="text-2xl text-secondary/80 mx-2 rotate-45" />
               <YmIcon className="ym-icon" icon="ui" />
-              <IoIosArrowRoundForward className="text-2xl text-secondary/70 mx-2" />
+              <IoIosArrowRoundForward className="text-2xl text-secondary/80 mx-2" />
               <YmIcon className="ym-icon" icon="cloud-shield" />
-              <IoIosArrowRoundForward className="text-2xl text-secondary/70 mx-2 -rotate-45" />
+              <IoIosArrowRoundForward className="text-2xl text-secondary/80 mx-2 -rotate-45" />
               <YmIcon className="ym-icon" icon="cloud-balancer" />
-              <IoIosArrowRoundForward className="text-2xl text-secondary/70 mx-2 rotate-45" />
+              <IoIosArrowRoundForward className="text-2xl text-secondary/80 mx-2 rotate-45" />
               <YmIcon className="ym-icon" icon="bug-tracker" />
-              <IoIosArrowRoundForward className="text-2xl text-secondary/70 mx-2" />
+              <IoIosArrowRoundForward className="text-2xl text-secondary/80 mx-2" />
               <YmIcon className="ym-icon" icon="todo-list" />
             </div>
           </div>  

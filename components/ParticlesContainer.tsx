@@ -103,7 +103,7 @@ const ParticlesContainer: React.FC<ParticlesContainerProps> = ({ className }) =>
                     outModes: {
                         default: "bounce",
                     },
-                    speed: 2,
+                    speed: 0.8,
                     spin: {
                         acceleration: 1,
                         enable: true
@@ -111,13 +111,12 @@ const ParticlesContainer: React.FC<ParticlesContainerProps> = ({ className }) =>
                     straight: false,
                 },
                 number: {
-                    value: 25
+                    value: 30
                 },
                 opacity: {
                     value: {
-                        min: 0.7,
-                        // max: 0.5
-                        max: 0.8
+                        min: 0.3,
+                        max: 0.6
                     },
                     animation: {
                         count: 0,
@@ -146,7 +145,7 @@ const ParticlesContainer: React.FC<ParticlesContainerProps> = ({ className }) =>
                     animation: {
                         count: 0,
                         enable: true,
-                        speed: 0.1,
+                        speed: 1,
                         decay: 0,
                         delay: 0,
                         sync: false,
@@ -278,7 +277,7 @@ const ParticlesContainer: React.FC<ParticlesContainerProps> = ({ className }) =>
                     distance: 150,
                     enable: true,
                     frequency: 300,
-                    opacity: 0.3,
+                    opacity: 0.4,
                     width: 1,
                     warp: false
                 },
