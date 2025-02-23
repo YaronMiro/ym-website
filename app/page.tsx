@@ -7,7 +7,6 @@ import { BsCodeSlash } from "react-icons/bs";
 import Social from "@/components/Social";
 import { Button } from "@/components/ui/button";
 import ParticlesContainer from '@/components/ParticlesContainer'
-import ContainerSeparator from "@/components/ContainerSeparator";
 import heroImage from '@/public/hero-image-2.png'
 import HeroIcons from "@/components/HeroIcons";
 
@@ -32,9 +31,18 @@ const Home: React.FC = () => {
                 <p className="mt-4">
                   Experienced in cloud technologies, DevOps, AI integration, and have a strong eye for design, all while consistently delivering high-quality, reliable software efficiently.
                 </p>
-              </div>
+              </div> 
             <Social className="flex mb-10 mt-16 xl:mt-12 gap-6" />
+            <Button
+              variant="outline"
+              size="lg"
+              className="xl:hidden flex items-center uppercase gap-2"
+            >
+              <span>Download CV</span>
+              <FiDownload className="text-xl" />
+            </Button>
             </div>
+            <div className="xl:hidden flex h-[1px] bg-white/10 w-full"></div>
             <div className="relative flex justify-center xl:flex-1 mt-24">
               <ParticlesContainer className="absolute bottom-10 w-full h-full z-[-9999] xl:right-0 xl:left-0" />
               <Image
@@ -45,20 +53,10 @@ const Home: React.FC = () => {
             </div>
           </div>
           <div className="pb-20">
-            <div className="h-[1px] bg-white/10 xl:w-[110%] xl:-mx-[5%]"></div>
-
-            {/* <Button
-              variant="outline"
-              size="lg"
-              className="xl:hidden flex items-center uppercase gap-2"
-            >
-              <span>Download CV</span>
-              <FiDownload className="text-xl" />
-            </Button> */}
+            <div className="h-[1px] bg-white/10 w-full xl:w-[110%] xl:-mx-[5%]"></div>
             <div className="flex justify-center my-7 z-50">
               <HeroIcons color="stroke-white/30" />
             </div>
-          {/* <ContainerSeparator /> */}
           </div>  
       </section>
     </>
