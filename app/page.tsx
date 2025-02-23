@@ -32,15 +32,17 @@ const Home: React.FC = () => {
                   Experienced in cloud technologies, DevOps, AI integration, and have a strong eye for design, all while consistently delivering high-quality, reliable software efficiently.
                 </p>
               </div> 
-            <Social className="flex mb-10 mt-16 xl:mt-12 gap-6" />
-            <Button
-              variant="outline"
-              size="lg"
-              className="xl:hidden flex items-center uppercase gap-2"
-            >
-              <span>Download CV</span>
-              <FiDownload className="text-xl" />
-            </Button>
+            <div className="flex justify-between xl:justify-start items-center">
+              <Social className="flex mb-10 mt-16 xl:mt-12 gap-6" />
+              <Button
+                variant="outline"
+                size="lg"
+                className="xl:hidden flex items-center uppercase gap-2"
+              >
+                <span>Download CV</span>
+                <FiDownload className="text-xl" />
+              </Button>
+            </div>
             </div>
             <div className="xl:hidden flex h-[1px] bg-white/10 w-full"></div>
             <div className="relative flex justify-center xl:flex-1 mt-24">

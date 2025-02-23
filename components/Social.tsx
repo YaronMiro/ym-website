@@ -31,7 +31,7 @@ const Social: React.FC<SocialProps> = ({ className, iconStyles }) => {
                                 <div className={`flex justify-center border border-accent rounded-full p-2 items-center bg-primary text-accent/70 group-hover:bg-accent/70 group-hover:text-primary ${iconStyles}`}>
                                     {icon}
                                 </div>
-                                <span className="flex capitalize ml-2 text-accent/70 group-hover:text-accent-hover">
+                                <span className="hidden xl:inline-block capitalize ml-2 text-accent/70 group-hover:text-accent-hover">
                                     {name}
                                 </span>
                            </div>
