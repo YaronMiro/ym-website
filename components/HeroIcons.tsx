@@ -30,7 +30,7 @@ const HeroIcons: React.FC<HeroIconsProps> = ({ color }) => {
                 return (
                     <div key={name} className="flex items-center">
                         <YmIcon className="w-[3rem] xl:w-[3.2rem]" icon={name} />
-                        <IoIosArrowRoundForward className={`ml-2 xl:ml-5 text-3xl text-secondary/60 ${arrowDirection}`} />
+                        <IoIosArrowRoundForward className={`ml-2 xl:ml-5 text-3xl text-accent/40 ${arrowDirection}`} />
                     </div>
                 )
             }) }
