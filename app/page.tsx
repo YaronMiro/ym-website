@@ -10,7 +10,6 @@ import { Button } from "@/components/ui/button";
 import ParticlesContainer from '@/components/ParticlesContainer'
 import YmIcon from '@/components/YmIcon'
 import heroImage from '@/public/hero-image-2.png'
-import { Separator } from "@/components/ui/separator";
 
 const Home: React.FC = () => {
   return (
@@ -36,20 +35,10 @@ const Home: React.FC = () => {
                   Experienced in cloud technologies, DevOps, AI integration, and have a strong eye for design, all while consistently delivering high-quality, reliable software efficiently.
                 </p>
               </div>
-              <Social className="flex mt-10 gap-6" />
-              <div className="flex flex-row items-center justify-center xl:justify-start mt-14 gap-8">
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="xl:hidden flex items-center uppercase gap-2"
-                >
-                  <span>Download CV</span>
-                  <FiDownload className="text-xl" />
-                </Button>
-              </div>
+              <Social className="flex mt-8 gap-6" />
             </div>
             <div>
-              <ParticlesContainer className="absolute top-0 right-0 bottom-0  w-[55%] h-[85%] z-[-9999]" />
+              <ParticlesContainer className="absolute top-0 right-0 bottom-0 w-[55%] h-[85%] z-[-9999]" />
               <div className="flex flex-col items-center">
               <Image
                 src={heroImage}
@@ -60,6 +49,14 @@ const Home: React.FC = () => {
             </div>
           </div>
           <div className="flex flex-col xl:flex-row justify-end items-center -mt-5">
+            <Button
+              variant="outline"
+              size="lg"
+              className="xl:hidden flex items-center uppercase gap-2"
+            >
+              <span>Download CV</span>
+              <FiDownload className="text-xl" />
+            </Button>
             <div className="flex items-center stroke-white/40">
               <YmIcon className="ym-icon" icon="head" />
               <IoIosArrowRoundForward className="text-2xl text-secondary/70 mx-2" />
@@ -79,7 +76,6 @@ const Home: React.FC = () => {
             </div>
           </div>  
         </div>
-        {/* <Separator className="mt-10  bg-white/30" /> */}
       </section>
     </>
     
