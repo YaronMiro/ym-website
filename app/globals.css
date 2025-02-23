@@ -127,11 +127,8 @@
     @apply font-primary bg-primary text-white;
   }
 
+
   .logo {
         @apply font-logo font-semibold;
   } 
-
-  .ym-icon {
-    @apply w-[3.2rem]
-  }
 }

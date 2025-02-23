@@ -7,7 +7,7 @@ interface YmIconProps {
     className: string;
 }
 
-const iconsMapping = {
+export const iconsMapping = {
     "head": "ym-icon-head.svg",
     "app-code": "ym-icon-app-code.svg",
     "cloud-shield": "ym-cloud-shield.svg",
