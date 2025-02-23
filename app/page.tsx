@@ -32,11 +32,10 @@ const Home: React.FC = () => {
                   Experienced in cloud technologies, DevOps, AI integration, and have a strong eye for design, all while consistently delivering high-quality, reliable software efficiently.
                 </p>
               </div> 
-            <div className="flex justify-between xl:justify-start items-center">
-              <Social className="flex mb-10 mt-16 xl:mt-12 gap-6" />
+            <div className="flex justify-between xl:justify-start items-center mb-16 xl:mb-10 mt-12 ">
+              <Social className="flex gap-8 text-2xl xl:text-base" />
               <Button
-                variant="outline"
-                size="lg"
+                size="xs"
                 className="xl:hidden flex items-center uppercase gap-2"
               >
                 <span>Download CV</span>
@@ -44,7 +43,6 @@ const Home: React.FC = () => {
               </Button>
             </div>
             </div>
-            <div className="xl:hidden flex h-[1px] bg-white/10 w-full"></div>
             <div className="relative flex justify-center xl:flex-1 mt-24">
               <ParticlesContainer className="absolute bottom-10 w-full h-full z-[-9999] xl:right-0 xl:left-0" />
               <Image
@@ -55,7 +53,7 @@ const Home: React.FC = () => {
             </div>
           </div>
           <div className="pb-20">
-            <div className="h-[1px] bg-white/10 w-full xl:w-[110%] xl:-mx-[5%]"></div>
+            <div className="h-[1px] bg-white/30 w-full"></div>
             <div className="flex justify-center my-7 z-50">
               <HeroIcons color="stroke-white/30" />
             </div>

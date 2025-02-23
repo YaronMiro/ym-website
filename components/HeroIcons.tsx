@@ -25,14 +25,14 @@ export const icons: IconData[] = [
 
 const HeroIcons: React.FC<HeroIconsProps> = ({ color }) => {
     return (
-        <div className={`${color} grid grid-cols-4 md:grid-cols-8 gap-y-5 xl:gap-y-0`}>
+        <div className={`${color} grid justify-center grid-cols-4 md:grid-cols-8 gap-y-5 xl:gap-y-0`}>
             {icons.map(({ name, arrowDirection}, index) => {
                 const itemPosition = (index + 1);
 
                 return (
-                    <div key={name} className="flex items-center justify-items-start">
+                    <div key={name} className="flex items-center">
                         <YmIcon className="w-[3rem]" icon={name} />
-                        {arrowDirection !== null && <IoIosArrowRoundForward className={`text-3xl text-secondary/60 mx-3 ${arrowDirection} ${itemPosition === 4 && 'hidden sm:block'}`} />}
+                        {arrowDirection !== null && <IoIosArrowRoundForward className={`text-3xl text-secondary/60 mx-3 ${arrowDirection} ${itemPosition === 4 && 'hidden xs:block'}`} />}
                     </div>
                 )
             }) }
