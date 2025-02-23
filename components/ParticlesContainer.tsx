@@ -3,8 +3,6 @@
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { type ISourceOptions } from "@tsparticles/engine";
-import resolveConfig from "tailwindcss/resolveConfig";
-import tailwindConfig from "@/tailwind.config";
 import { loadSlim } from "@tsparticles/slim";
 
 
@@ -15,11 +13,6 @@ interface ParticlesContainerProps {
 
 const ParticlesContainer: React.FC<ParticlesContainerProps> = ({ className }) => {
     const [init, setInit] = useState(false);
-
-    const fullConfig = resolveConfig(tailwindConfig);
-    const accentColor = fullConfig.theme.colors.accent.DEFAULT;
-
-    console.log('accentColor', accentColor);
 
     useEffect(() => {
         initParticlesEngine(async (engine) => {
@@ -86,7 +79,9 @@ const ParticlesContainer: React.FC<ParticlesContainerProps> = ({ className }) =>
                     }
                 },
                 color: {
-                    value: "#ffffff",
+                    // value: "#ffffff",
+                    // value: ["#ffffff", "#ff7b0d"],
+                    value: ["#15c1b0", "#ff7b0d"],
                     // value: "#ff7b0d", // Orange
 
                 },
@@ -103,7 +98,7 @@ const ParticlesContainer: React.FC<ParticlesContainerProps> = ({ className }) =>
                     outModes: {
                         default: "bounce",
                     },
-                    speed: 0.8,
+                    speed: 1,
                     spin: {
                         acceleration: 1,
                         enable: true
@@ -271,7 +266,7 @@ const ParticlesContainer: React.FC<ParticlesContainerProps> = ({ className }) =>
                     color: {
                         // @todo Fix using theme color
                         // value: "#FFFFFF" // White
-                        value: "#15c1b0" // Primary
+                        value: "#15c1b0" // accent
                     },
                     consent: false,
                     distance: 150,
