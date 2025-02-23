@@ -1,55 +1,40 @@
 import * as React from "react"
 
 import { IoIosArrowRoundForward } from "react-icons/io";
-import YmIcon, { iconsMapping } from "@/components/YmIcon";
+import YmIcon, { IconName } from "@/components/YmIcon";
 
 interface HeroIconsProps {
     color: string;
     className?: string;
 }
 
+interface IconData {
+    name: IconName;
+    arrowDirection: string;
+}
+
+export const icons: IconData[] = [
+    { name: "head", arrowDirection: "" },
+    { name: "app-code", arrowDirection: "-rotate-45" },
+    { name: "cloud-shield", arrowDirection: "rotate-45" },
+    { name: "api", arrowDirection: "" },
+    { name: "ui", arrowDirection: "-rotate-45" },
+    { name: "cloud-balancer", arrowDirection: "rotate-45" },
+    { name: "bug-tracker", arrowDirection: "" },
+    { name: "todo-list", arrowDirection: "-rotate-45" },
+];
+
 const HeroIcons: React.FC<HeroIconsProps> = ({ color, className }) => {
     return (
         <div className={`${color} grid grid-cols-4 gap-4 xl:grid-cols-8 xl:gap-2 ${className}`}>
-            <div className="flex items-center justify-center gap-2">
-                <YmIcon className="w-[2.5rem] xl:w-[3rem]" icon="head" />
-                <IoIosArrowRoundForward className="text-2xl text-secondary/80" />
-            </div>
-
-            <div className="flex items-center justify-center gap-2">
-                <YmIcon className="w-[2.5rem] xl:w-[3rem]" icon="app-code" />
-                <IoIosArrowRoundForward className="text-2xl text-secondary/80 -rotate-45" />
-            </div>
-
-            <div className="flex items-center justify-center gap-2">
-                <YmIcon className="w-[2.5rem] xl:w-[3rem]" icon="api" />
-                <IoIosArrowRoundForward className="text-2xl text-secondary/80 rotate-45" />
-            </div>
-
-            <div className="flex items-center justify-center gap-2">
-                <YmIcon className="w-[2.5rem] xl:w-[3rem]" icon="ui" />
-                <IoIosArrowRoundForward className="text-2xl text-secondary/80" />
-            </div>
-
-            <div className="flex items-center justify-center gap-2">
-                <YmIcon className="w-[2.5rem] xl:w-[3rem]" icon="cloud-shield" />
-                <IoIosArrowRoundForward className="text-2xl text-secondary/80 -rotate-45" />
-            </div>
-
-            <div className="flex items-center justify-center gap-2">
-                <YmIcon className="w-[2.5rem] xl:w-[3rem]" icon="cloud-balancer" />
-                <IoIosArrowRoundForward className="text-2xl text-secondary/80 rotate-45" />
-            </div>
-
-            <div className="flex items-center justify-center gap-2">
-                <YmIcon className="w-[2.5rem] xl:w-[3rem]" icon="bug-tracker" />
-                <IoIosArrowRoundForward className="text-2xl text-secondary/80" />
-            </div>
-
-            <div className="flex items-center justify-center gap-2">
-                <YmIcon className="w-[2.5rem] xl:w-[3rem]" icon="todo-list" />
-                <IoIosArrowRoundForward className="text-2xl text-secondary/80" />
-            </div>
+            {icons.map(({ name, arrowDirection}) => {
+                return (
+                    <div key={name} className="flex items-center justify-center gap-2">
+                        <YmIcon className="w-[2.5rem] xl:w-[3rem]" icon={name} />
+                        <IoIosArrowRoundForward className={`text-2xl text-secondary/80 ${arrowDirection}`} />
+                    </div>
+                )
+            }) }
         </div>
     );
 };
