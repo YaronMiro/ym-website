@@ -13,7 +13,7 @@ const MobileNav: React.FC = () => {
     return (
         <Sheet>
             <SheetTrigger className="flex justify-center items-center">
-                <CiMenuFries className="text-[36px] text-accent" />
+                <CiMenuFries className="text-5xl text-accent" />
             </SheetTrigger>
             <SheetContent className="flex flex-col">
                 {/* Logo */}

@@ -7,6 +7,7 @@ import { BsCodeSlash } from "react-icons/bs";
 import Social from "@/components/Social";
 import { Button } from "@/components/ui/button";
 import ParticlesContainer from '@/components/ParticlesContainer'
+import ContainerSeparator from "@/components/ContainerSeparator";
 import heroImage from '@/public/hero-image-2.png'
 import HeroIcons from "@/components/HeroIcons";
 
@@ -15,7 +16,7 @@ const Home: React.FC = () => {
     <>
       <section className="container">
           <div className="flex flex-col xl:flex-row items-center xl:items-start">
-          <div className="mb-28">
+          <div>
               <h1 className="flex flex-col font-semibold">
                 <span className="text-5xl text-white">Hello I&apos;m</span>
                 <span className="mt-2 text-7xl text-accent">Yaron Miro</span>
@@ -32,18 +33,20 @@ const Home: React.FC = () => {
                   Experienced in cloud technologies, DevOps, AI integration, and have a strong eye for design, all while consistently delivering high-quality, reliable software efficiently.
                 </p>
               </div>
-              <Social className="flex mt-8 gap-6" />
+            <Social className="flex mb-10 mt-16 xl:mt-12 gap-6" />
             </div>
-            <div className="relative xl:mt-20 flex justify-center xl:flex-1">
-            <ParticlesContainer className="absolute bottom-10 w-full h-full z-[-9999] xl:right-0 xl:left-0" />
+            <div className="relative flex justify-center xl:flex-1 mt-24">
+              <ParticlesContainer className="absolute bottom-10 w-full h-full z-[-9999] xl:right-0 xl:left-0" />
               <Image
-              className="w-[90%] xl:w-auto h-auto xl:h-[600px]"
+                className="max-h-[600px] w-auto h-auto xl:h-[550px] px-8 xl:px-0"
                 src={heroImage}
                 alt="Image of Yaron Miro"
               />
             </div>
           </div>
-        <div className="flex flex-row justify-center xl:justify-end items-center -mt-6 xl:-mt-7 pb-20">
+          <div className="pb-20">
+            <div className="h-[1px] bg-white/10 xl:w-[110%] xl:-mx-[5%]"></div>
+
             {/* <Button
               variant="outline"
               size="lg"
@@ -52,7 +55,10 @@ const Home: React.FC = () => {
               <span>Download CV</span>
               <FiDownload className="text-xl" />
             </Button> */}
-            <HeroIcons color="stroke-white/60" className="z-50" />
+            <div className="flex justify-center my-7 z-50">
+              <HeroIcons color="stroke-white/30" />
+            </div>
+          {/* <ContainerSeparator /> */}
           </div>  
       </section>
     </>

@@ -5,12 +5,11 @@ import YmIcon, { IconName } from "@/components/YmIcon";
 
 interface HeroIconsProps {
     color: string;
-    className?: string;
 }
 
 interface IconData {
     name: IconName;
-    arrowDirection: string;
+    arrowDirection?: string | null;
 }
 
 export const icons: IconData[] = [
@@ -21,17 +20,19 @@ export const icons: IconData[] = [
     { name: "ui", arrowDirection: "-rotate-45" },
     { name: "cloud-balancer", arrowDirection: "rotate-45" },
     { name: "bug-tracker", arrowDirection: "" },
-    { name: "todo-list", arrowDirection: "-rotate-45" },
+    { name: "todo-list", arrowDirection: null },
 ];
 
-const HeroIcons: React.FC<HeroIconsProps> = ({ color, className }) => {
+const HeroIcons: React.FC<HeroIconsProps> = ({ color }) => {
     return (
-        <div className={`${color} grid grid-cols-4 gap-4 xl:grid-cols-8 xl:gap-2 ${className}`}>
-            {icons.map(({ name, arrowDirection}) => {
+        <div className={`${color} grid grid-cols-4 md:grid-cols-8 gap-y-5 xl:gap-y-0`}>
+            {icons.map(({ name, arrowDirection}, index) => {
+                const itemPosition = (index + 1);
+
                 return (
-                    <div key={name} className="flex items-center justify-center gap-2">
-                        <YmIcon className="w-[2.5rem] xl:w-[3rem]" icon={name} />
-                        <IoIosArrowRoundForward className={`text-2xl text-secondary/80 ${arrowDirection}`} />
+                    <div key={name} className="flex items-center justify-items-start">
+                        <YmIcon className="w-[3rem]" icon={name} />
+                        {arrowDirection !== null && <IoIosArrowRoundForward className={`text-3xl text-secondary/60 mx-3 ${arrowDirection} ${itemPosition === 4 && 'hidden sm:block'}`} />}
                     </div>
                 )
             }) }
