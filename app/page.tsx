@@ -16,7 +16,7 @@ const Home: React.FC = () => {
     <>
       <section className="h-full">
         <div className="container mx-auto h-full">
-          <div className="relative flex flex-col xl:flex-row xl:gap-20 items-center">
+          <div className="relative flex flex-col xl:flex-row xl:gap-20 items-start">
             <div className="text-center xl:text-left">
               <h1 className="h1">
                 <span className="text-6xl text-white"> Hello I&apos;m</span>
@@ -37,7 +37,7 @@ const Home: React.FC = () => {
               </div>
               <Social className="flex mt-8 gap-6" />
             </div>
-            <div>
+            <div className="mt-20">
               <ParticlesContainer className="absolute top-0 right-0 bottom-0 w-[55%] h-[85%] z-[-9999]" />
               <div className="flex flex-col items-center">
               <Image
@@ -48,16 +48,16 @@ const Home: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col xl:flex-row justify-end items-center -mt-5">
-            <Button
+          <div className="flex flex-col xl:flex-row justify-end -mt-6">
+            {/* <Button
               variant="outline"
               size="lg"
               className="xl:hidden flex items-center uppercase gap-2"
             >
               <span>Download CV</span>
               <FiDownload className="text-xl" />
-            </Button>
-            <div className="flex items-center stroke-white/40">
+            </Button> */}
+            <div className="flex items-center stroke-white/40 z-50">
               <YmIcon className="ym-icon" icon="head" />
               <IoIosArrowRoundForward className="text-2xl text-secondary/70 mx-2" />
               <YmIcon className="ym-icon" icon="app-code" />

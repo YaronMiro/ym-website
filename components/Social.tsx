@@ -1,7 +1,7 @@
 import * as React from "react"
 import Link from "next/link";
 
-import { FaGithub, FaLinkedin, FaBehanceSquare } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaBehance } from "react-icons/fa";
 
 interface SocialProps {
     className?: string;
@@ -11,8 +11,8 @@ interface SocialProps {
 
 const socials = [
     { name: 'github', icon: <FaGithub />, path: "https://github.com/YaronMiro?tab=repositories&q=&type=&language=&sort=stargazers"},
-    { name: "linkedin", icon: <FaLinkedin />, path: "https://www.linkedin.com/in/yaronmiro/"},
-    { name: "behance", icon: <FaBehanceSquare />, path: "https://www.behance.net/gallery/49574621/All"},
+    { name: "linkedin", icon: <FaLinkedinIn />, path: "https://www.linkedin.com/in/yaronmiro/"},
+    { name: "behance", icon: <FaBehance />, path: "https://www.behance.net/gallery/49574621/All"},
 ]
 
 const Social: React.FC<SocialProps> = ({ className, iconStyles }) => {
@@ -27,7 +27,7 @@ const Social: React.FC<SocialProps> = ({ className, iconStyles }) => {
                             href={path}
                         >
                            <div className="flex items-center">
-                                <div className={`flex justify-center border border-accent rounded-full p-2 items-center bg-primary text-accent/70 text-xl group-hover:bg-accent/70 group-hover:text-primary ${iconStyles}`}
+                                <div className={`flex justify-center border border-accent rounded-full p-2 items-center bg-primary text-accent/70 group-hover:bg-accent/70 group-hover:text-primary ${iconStyles}`}
                                 >
                                     {icon}
                                 </div>

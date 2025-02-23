@@ -122,6 +122,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply font-primary bg-primary text-white;
   }
@@ -143,6 +144,6 @@
   } 
 
   .ym-icon {
-    @apply w-[3rem]
+    @apply w-[3.2rem]
   }
 }
