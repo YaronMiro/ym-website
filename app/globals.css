@@ -25,7 +25,9 @@
 
     --primary-hover: 240 3% 18%;
 
-    --secondary: 23 89% 30%;
+    --secondary: 38 58% 52%;
+
+    --secondary-hover: 38 58% 60%;
 
     --secondary-foreground: 222.2 47.4% 11.2%;
 
@@ -33,9 +35,9 @@
 
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 174 80% 32%;
+    --accent: 163 47% 30%;
 
-    --accent-hover: 174 80% 22%;
+    --accent-hover: 163 47% 37%;
 
     --accent-foreground: 222.2 47.4% 11.2%;
 

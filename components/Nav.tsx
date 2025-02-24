@@ -13,8 +13,8 @@ const Nav: React.FC = () => {
                 return (
                     <Link
                         className={`${
-                            path === pathName && "text-accent border-b-2 border-accent"
-                            } capitalize font-medium hover:text-accent transition-all
+                            path === pathName && "text-accent-hover border-b-2 border-accent-hover"
+                            } capitalize font-medium hover:text-accent-hover transition-all
                         `}
                         href={path}
                         key={name}

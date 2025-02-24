@@ -57,7 +57,7 @@ const options: ISourceOptions = {
         },
         color: {
             // @todo Fix using theme color
-            value: ["#15c1b0", "#ff7b0d"], // accent and secondary
+            value: ["#cc983e", "#2d6c5a"], // accent and secondary
 
         },
         effect: {
@@ -240,13 +240,13 @@ const options: ISourceOptions = {
             blink: false,
             color: {
                 // @todo Fix using theme color
-                value: "#15c1b0" // accent
+                value: "#2d6c5a" // accent
             },
             consent: false,
-            distance: 150,
+            distance: 160,
             enable: true,
-            frequency: 300,
-            opacity: 0.4,
+            frequency: 500,
+            opacity: 0.5,
             width: 1,
             warp: false
         },
