@@ -38,8 +38,10 @@ const Home: React.FC = () => {
                   Experienced in cloud technologies, DevOps, AI integration, and have a strong eye for design, all while consistently delivering high-quality, reliable software efficiently.
                 </p>
               </div>
+          </div>
+          <div>
               {/* social links and resume download */}
-              <div className="flex xl:flex-col items-center xl:items-start mb-16 xl:mb-0 mt-12">
+              <div className="flex xl:flex-col items-center xl:items-start mb-16 xl:mb-0 mt-12 xl:mt-0">
                 <div className="flex justify-between items-center w-full">
                   <Social className="flex gap-8 text-2xl xl:text-base" />
                   <Button
@@ -51,11 +53,15 @@ const Home: React.FC = () => {
                   </Button>
                 </div>
               </div>
-          </div>
-          {/* contact info */}
-          <div className="flex gap-4 mb-8">
-              <Link href="mailto:yaron.miro@gmail.com"><span className="font-semibold text-accent">Email: </span>yaron.miro@gmail.com</Link>
-              <Link href="tel:+972--544297621"><span className="font-semibold text-accent">Phone: </span>+972-544297621</Link>
+              {/* contact info */}
+              <div className="flex gap-4 mb-8 mt-6">
+                <Link href="mailto:yaron.miro@gmail.com">
+                  <span className="font-semibold text-accent">Email: </span>yaron.miro@gmail.com
+                </Link>
+                <Link href="tel:+972--544297621">
+                  <span className="font-semibold text-accent">Phone: </span>+972-544297621
+                </Link>
+              </div>
           </div>
         </div>
         {/* Image and particles */}
@@ -72,7 +78,7 @@ const Home: React.FC = () => {
           {/* Icons */}
           <div className="h-[1px] bg-white/20 w-full"></div>
           <div className="flex justify-center my-7 z-50">
-            <HeroIcons iconColor="stroke-white/50" arrowColor="text-white/30" />
+            <HeroIcons iconColor="stroke-white/50" arrowColor="text-secondary/70" />
           </div>
         </footer>
       </div>
