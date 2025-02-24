@@ -73,9 +73,9 @@ const options: ISourceOptions = {
             outModes: {
                 default: "bounce",
             },
-            speed: 1.7,
+            speed: 1,
             spin: {
-                acceleration: 1.2,
+                acceleration: 1,
                 enable: true
             },
             straight: false,
@@ -243,9 +243,9 @@ const options: ISourceOptions = {
                 value: "#2d6c5a" // accent
             },
             consent: false,
-            distance: 160,
+            distance: 150,
             enable: true,
-            frequency: 500,
+            frequency: 350,
             opacity: 0.5,
             width: 1,
             warp: false

@@ -15,7 +15,7 @@ const Home: React.FC = () => {
   return (
   <>
     <div className="container pb-36">
-        <main className="flex flex-col xl:flex-row items-center xl:items-stretch xl:justify-between">
+        <main className="flex flex-col xl:flex-row items-center xl:items-start xl:justify-between">
         {/* hero section */}
         <div className="flex flex-col justify-between">
           <div>
@@ -39,7 +39,7 @@ const Home: React.FC = () => {
                 </p>
               </div>
           </div>
-          <div className="mb-8">
+          <div className="my-20">
               {/* social links and resume download */}
               <div className="flex xl:flex-col items-center xl:items-start mb-16 xl:mb-0 mt-12 xl:mt-0">
                 <div className="flex justify-between items-center w-full">
@@ -69,10 +69,12 @@ const Home: React.FC = () => {
         <div className="relative flex justify-center">
           <ParticlesContainer className="absolute bottom-10 w-full h-full z-[-9999] xl:right-0 xl:left-0" />
           <Image
-            className="max-h-[600px] w-auto h-auto xl:h-[600px] px-8 xl:pr-28 xl:px-0 xl:mt-56"
+            className="max-h-[550px] w-auto h-auto xl:h-[550px] px-8 xl:px-0 mt-32"
             src={heroImage}
             alt="Image of Yaron Miro"
           />
+          {/* Fade bottom */}
+          <div className="xl:block absolute bottom-[-15px] right-0 left-0 h-[15%] bg-gradient-to-b from-transparent to-primary"></div>
         </div>
       </main>
         <footer className="">

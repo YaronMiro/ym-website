@@ -7,7 +7,7 @@ import { FiDownload } from "react-icons/fi";
 
 const Header: React.FC = () => {
     return (
-        <header className="mb-8 xl:mb-12 py-12 text-white">
+        <header className="mb-8 py-12 text-white">
             <div className="container mx-auto">
                 <div className="flex justify-between items-center">
                     <Logo className="text-6xl" />
@@ -23,6 +23,7 @@ const Header: React.FC = () => {
                     </div>
                     <div className="xl:hidden"><MobileNav /></div>
                 </div>
+                <div className="h-[1px] bg-white/20 w-full mt-12"></div>
             </div>
         </header>
     );
