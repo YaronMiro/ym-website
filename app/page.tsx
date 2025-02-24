@@ -13,27 +13,33 @@ import Link from "next/link";
 
 const Home: React.FC = () => {
   return (
-    <>
-      <section className="container">
-          <div className="flex flex-col xl:flex-row items-center xl:items-start">
+  <>
+    <div className="container pb-36">
+       <main className="flex flex-col xl:flex-row items-center xl:items-stretch">
+        {/* hero section */}
+        <div className="flex flex-col justify-between">
           <div>
+              {/* main Title */}
               <h1 className="flex flex-col font-semibold">
-                <span className="text-5xl text-white">Hello I&apos;m</span>
+                <span className="text-5xl text-white/70">Hello I&apos;m</span>
                 <span className="mt-2 text-7xl text-accent">Yaron Miro</span>
               </h1>
+              {/* role */}
               <div className="flex items-center mt-10 gap-3">
                 <span className="text-3xl">Senior Fullstack Developer</span>
                 <BsCodeSlash role="img" aria-label="developer icon" className="rounded-full p-[4px] w-[30px] h-[30px] border border-secondary/70 text-secondary/70" />
               </div>
-              <div className="max-w-[500px] mt-3 leading-8 text-white/80">
+              {/* description */}
+              <div className="max-w-[500px] mt-3 leading-8 text-white/70 text-[1.1rem]">
                 <p>
                   With 10+ years of experience in backend and frontend, building scalable, high-performance web applications with modern technologies.
                 </p>
                 <p className="mt-4">
                   Experienced in cloud technologies, DevOps, AI integration, and have a strong eye for design, all while consistently delivering high-quality, reliable software efficiently.
                 </p>
-              </div> 
-              <div className="flex xl:flex-col items-center xl:items-start mb-16 xl:mb-10 mt-12">
+              </div>
+              {/* social links and resume download */}
+              <div className="flex xl:flex-col items-center xl:items-start mb-16 xl:mb-0 mt-12">
                 <div className="flex justify-between items-center w-full">
                   <Social className="flex gap-8 text-2xl xl:text-base" />
                   <Button
@@ -45,28 +51,31 @@ const Home: React.FC = () => {
                   </Button>
                 </div>
               </div>
-            </div>
-            <div className="relative flex justify-center xl:flex-1 mt-24">
-              <ParticlesContainer className="absolute bottom-10 w-full h-full z-[-9999] xl:right-0 xl:left-0" />
-              <Image
-                className="max-h-[600px] w-auto h-auto xl:h-[600px] px-8 xl:px-0"
-                src={heroImage}
-                alt="Image of Yaron Miro"
-              />
-            </div>
           </div>
-          <div>
-            <div className="h-[1px] bg-white/30 w-full"></div>
-            <div className="flex justify-center my-7 z-50">
-              <HeroIcons color="stroke-white/30" />
-            </div>
+          {/* contact info */}
+          <div className="flex gap-4 mb-4">
+              <Link href="mailto:yaron.miro@gmail.com"><span className="font-semibold">Email: </span>yaron.miro@gmail.com</Link>
+              <Link href="tel:+972--544297621"><span className="font-semibold">Phone: </span>+972-544297621</Link>
           </div>
-        <div className="h-[1px] bg-white/30 w-full"></div>
-        <div className="flex flex-col gap-4 mt-4 border-l-2 border-l-secondary/50 pl-2">
-          <Link href="mailto:yaron.miro@gmail.com">yaron.miro@gmail.com</Link>
-          <Link href="tel:+972--544297621">+972-544297621</Link>
         </div>
-      </section>
+        {/* Image and particles */}
+        <div className="relative flex justify-center xl:flex-1">
+          <ParticlesContainer className="absolute bottom-10 w-full h-full z-[-9999] xl:right-0 xl:left-0" />
+          <Image
+            className="max-h-[600px] w-auto h-auto xl:h-[600px] px-8 xl:px-0 xl:mt-56"
+            src={heroImage}
+            alt="Image of Yaron Miro"
+          />
+        </div>
+      </main>
+        <footer>
+          {/* Icons */}
+          <div className="h-[1px] bg-white/40 w-full"></div>
+          <div className="flex justify-center my-7 z-50">
+            <HeroIcons iconColor="stroke-white/60" arrowColor="text-accent/60" />
+          </div>
+        </footer>
+      </div>
     </>
   );
 };
