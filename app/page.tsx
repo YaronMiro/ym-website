@@ -27,7 +27,7 @@ const Home: React.FC = () => {
               {/* role */}
               <div className="flex items-center mt-10 gap-3">
                 <span className="text-3xl">Senior Fullstack Developer</span>
-                <BsCodeSlash role="img" aria-label="developer icon" className="rounded-full p-[4px] w-[30px] h-[30px] border border-secondary/70 text-secondary/70" />
+                <BsCodeSlash role="img" aria-label="developer icon" className="rounded-full p-[4px] w-[30px] h-[30px] border border-secondary text-secondary" />
               </div>
               {/* description */}
               <div className="max-w-[500px] mt-3 leading-8 text-white/70 text-[1.1rem]">
@@ -39,11 +39,11 @@ const Home: React.FC = () => {
                 </p>
               </div>
           </div>
-          <div>
+          <div className="mb-8">
               {/* social links and resume download */}
               <div className="flex xl:flex-col items-center xl:items-start mb-16 xl:mb-0 mt-12 xl:mt-0">
                 <div className="flex justify-between items-center w-full">
-                  <Social className="flex gap-8 text-2xl xl:text-base" />
+                  <Social className="flex gap-5" iconStyles="text-xl" />
                   <Button
                     size="xs"
                     className="xl:hidden flex items-center uppercase gap-2"
@@ -54,12 +54,13 @@ const Home: React.FC = () => {
                 </div>
               </div>
               {/* contact info */}
-              <div className="flex gap-4 mb-8 mt-6">
+              <div className="flex gap-3 mt-6">
                 <Link href="mailto:yaron.miro@gmail.com">
-                  <span className="font-semibold text-accent">Email: </span>yaron.miro@gmail.com
+                  <span className="font-semibold text-secondary">Email: </span>yaron.miro@gmail.com
                 </Link>
+                <span className="text-white/50">|</span>
                 <Link href="tel:+972--544297621">
-                  <span className="font-semibold text-accent">Phone: </span>+972-544297621
+                  <span className="font-semibold text-secondary">Phone: </span>+972-544297621
                 </Link>
               </div>
           </div>
@@ -78,7 +79,7 @@ const Home: React.FC = () => {
           {/* Icons */}
           <div className="h-[1px] bg-white/20 w-full"></div>
           <div className="flex justify-center my-7 z-50">
-            <HeroIcons iconColor="stroke-white/50" arrowColor="text-secondary/70" />
+            <HeroIcons iconColor="stroke-white/50" arrowColor="text-secondary" />
           </div>
         </footer>
       </div>
