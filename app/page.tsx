@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import ParticlesContainer from '@/components/ParticlesContainer'
 import heroImage from '@/public/hero-image-2.png'
 import HeroIcons from "@/components/HeroIcons";
+import Link from "next/link";
 
 const Home: React.FC = () => {
   return (
@@ -32,35 +33,41 @@ const Home: React.FC = () => {
                   Experienced in cloud technologies, DevOps, AI integration, and have a strong eye for design, all while consistently delivering high-quality, reliable software efficiently.
                 </p>
               </div> 
-              <div className="flex justify-between xl:justify-start items-center mb-16 xl:mb-10 mt-12 ">
-                <Social className="flex gap-8 text-2xl xl:text-base" />
-                <Button
-                  size="xs"
-                  className="xl:hidden flex items-center uppercase gap-2"
-                >
-                  <span>Download CV</span>
-                  <FiDownload className="text-xl" />
-                </Button>
+              <div className="flex xl:flex-col items-center xl:items-start mb-16 xl:mb-10 mt-12">
+                <div className="flex justify-between items-center w-full">
+                  <Social className="flex gap-8 text-2xl xl:text-base" />
+                  <Button
+                    size="xs"
+                    className="xl:hidden flex items-center uppercase gap-2"
+                  >
+                    <span>Download CV</span>
+                    <FiDownload className="text-xl" />
+                  </Button>
+                </div>
               </div>
             </div>
             <div className="relative flex justify-center xl:flex-1 mt-24">
               <ParticlesContainer className="absolute bottom-10 w-full h-full z-[-9999] xl:right-0 xl:left-0" />
               <Image
-                className="max-h-[600px] w-auto h-auto xl:h-[550px] px-8 xl:px-0"
+                className="max-h-[600px] w-auto h-auto xl:h-[600px] px-8 xl:px-0"
                 src={heroImage}
                 alt="Image of Yaron Miro"
               />
             </div>
           </div>
-          <div className="pb-20">
+          <div>
             <div className="h-[1px] bg-white/30 w-full"></div>
             <div className="flex justify-center my-7 z-50">
               <HeroIcons color="stroke-white/30" />
             </div>
-          </div>  
+          </div>
+        <div className="h-[1px] bg-white/30 w-full"></div>
+        <div className="flex flex-col gap-4 mt-4 border-l-2 border-l-secondary/50 pl-2">
+          <Link href="mailto:yaron.miro@gmail.com">yaron.miro@gmail.com</Link>
+          <Link href="tel:+972--544297621">+972-544297621</Link>
+        </div>
       </section>
     </>
-    
   );
 };
 
