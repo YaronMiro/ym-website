@@ -54,15 +54,15 @@ const Home: React.FC = () => {
           </div>
           {/* contact info */}
           <div className="flex gap-4 mb-4">
-              <Link href="mailto:yaron.miro@gmail.com"><span className="font-semibold">Email: </span>yaron.miro@gmail.com</Link>
-              <Link href="tel:+972--544297621"><span className="font-semibold">Phone: </span>+972-544297621</Link>
+              <Link href="mailto:yaron.miro@gmail.com"><span className="font-semibold text-accent">Email: </span>yaron.miro@gmail.com</Link>
+              <Link href="tel:+972--544297621"><span className="font-semibold text-accent">Phone: </span>+972-544297621</Link>
           </div>
         </div>
         {/* Image and particles */}
         <div className="relative flex justify-center">
           <ParticlesContainer className="absolute bottom-10 w-full h-full z-[-9999] xl:right-0 xl:left-0" />
           <Image
-            className="max-h-[600px] w-auto h-auto xl:h-[600px] px-8 xl:px-0 xl:mt-56"
+            className="max-h-[600px] w-auto h-auto xl:h-[600px] px-8 xl:pr-28 xl:px-0 xl:mt-56"
             src={heroImage}
             alt="Image of Yaron Miro"
           />
@@ -70,9 +70,9 @@ const Home: React.FC = () => {
       </main>
         <footer>
           {/* Icons */}
-          {/* <div className="h-[1px] bg-white/40 w-full"></div> */}
+          <div className="h-[1px] bg-white/20 w-full"></div>
           <div className="flex justify-center my-7 z-50">
-            <HeroIcons iconColor="stroke-white/60" arrowColor="text-accent/60" />
+            <HeroIcons iconColor="stroke-white/50" arrowColor="text-white/30" />
           </div>
         </footer>
       </div>
