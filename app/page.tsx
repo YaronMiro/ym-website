@@ -53,7 +53,7 @@ const Home: React.FC = () => {
               </div>
           </div>
           {/* contact info */}
-          <div className="flex gap-4 mb-4">
+          <div className="flex gap-4 mb-8">
               <Link href="mailto:yaron.miro@gmail.com"><span className="font-semibold text-accent">Email: </span>yaron.miro@gmail.com</Link>
               <Link href="tel:+972--544297621"><span className="font-semibold text-accent">Phone: </span>+972-544297621</Link>
           </div>
@@ -68,7 +68,7 @@ const Home: React.FC = () => {
           />
         </div>
       </main>
-        <footer>
+        <footer className="">
           {/* Icons */}
           <div className="h-[1px] bg-white/20 w-full"></div>
           <div className="flex justify-center my-7 z-50">
