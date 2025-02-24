@@ -15,7 +15,7 @@ const Home: React.FC = () => {
   return (
   <>
     <div className="container pb-36">
-       <main className="flex flex-col xl:flex-row items-center xl:items-stretch">
+        <main className="flex flex-col xl:flex-row items-center xl:items-stretch xl:justify-between">
         {/* hero section */}
         <div className="flex flex-col justify-between">
           <div>
@@ -59,7 +59,7 @@ const Home: React.FC = () => {
           </div>
         </div>
         {/* Image and particles */}
-        <div className="relative flex justify-center xl:flex-1">
+        <div className="relative flex justify-center">
           <ParticlesContainer className="absolute bottom-10 w-full h-full z-[-9999] xl:right-0 xl:left-0" />
           <Image
             className="max-h-[600px] w-auto h-auto xl:h-[600px] px-8 xl:px-0 xl:mt-56"
