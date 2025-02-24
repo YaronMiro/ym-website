@@ -8,7 +8,7 @@ import { NAV_LINKS } from "@/lib/constants/navLinks";
 const Nav: React.FC = () => {
     const pathName = usePathname();
     return (
-        <nav className="flex gap-8">
+        <nav className="flex gap-8 text-white/70">
             {NAV_LINKS.map(({name, path}) => {
                 return (
                     <Link

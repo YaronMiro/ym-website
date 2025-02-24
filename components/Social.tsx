@@ -28,11 +28,11 @@ const Social: React.FC<SocialProps> = ({ className, iconStyles }) => {
                             target="_blank"
                         >
                            <div className="flex items-center">
-                                <div className={`flex justify-center border border-accent rounded-full p-3 items-center bg-primary text-accent group-hover:bg-accent-hover group-hover:text-primary ${iconStyles}`}>
+                                <div className={`flex justify-center border border-accent rounded-full p-2 items-center bg-accent text-primary group-hover:bg-accent-hover group-hover:text-primary ${iconStyles}`}>
                                     {icon}
                                 </div>
                                 <span className="hidden xl:inline-block text-[1rem] capitalize ml-2 text-white/70">
-                                    {/* {name} */}
+                                    {name}
                                 </span>
                            </div>
                         </Link>

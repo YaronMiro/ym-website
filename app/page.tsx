@@ -25,8 +25,8 @@ const Home: React.FC = () => {
                 <span className="mt-2 text-7xl text-accent">Yaron Miro</span>
               </h1>
               {/* role */}
-              <div className="flex items-center mt-10 gap-3">
-                <span className="text-3xl">Senior Fullstack Developer</span>
+              <div className="flex items-center mt-20 gap-3">
+                <span className="text-secondary text-3xl">Senior Fullstack Developer</span>
                 <BsCodeSlash role="img" aria-label="developer icon" className="rounded-full p-[4px] w-[30px] h-[30px] border border-secondary text-secondary" />
               </div>
               {/* description */}
@@ -43,7 +43,7 @@ const Home: React.FC = () => {
               {/* social links and resume download */}
               <div className="flex xl:flex-col items-center xl:items-start mb-16 xl:mb-0 mt-12 xl:mt-0">
                 <div className="flex justify-between items-center w-full">
-                  <Social className="flex gap-5" iconStyles="text-xl" />
+                  <Social className="flex gap-5 w-full" iconStyles="text-base" />
                   <Button
                     size="xs"
                     className="xl:hidden flex items-center uppercase gap-2"
@@ -54,7 +54,7 @@ const Home: React.FC = () => {
                 </div>
               </div>
               {/* contact info */}
-              <div className="flex gap-3 mt-6">
+              <div className="flex gap-3 mt-6 text-white/70" >
                 <Link href="mailto:yaron.miro@gmail.com">
                   <span className="font-semibold text-secondary">Email: </span>yaron.miro@gmail.com
                 </Link>
@@ -79,7 +79,7 @@ const Home: React.FC = () => {
           {/* Icons */}
           <div className="h-[1px] bg-white/20 w-full"></div>
           <div className="flex justify-center my-7 z-50">
-            <HeroIcons iconColor="stroke-white/50" arrowColor="text-secondary" />
+            <HeroIcons iconColor="stroke-white/50" arrowColor="text-accent/55" />
           </div>
         </footer>
       </div>
