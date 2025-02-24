@@ -39,7 +39,7 @@ const Home: React.FC = () => {
                 </p>
               </div>
           </div>
-          <div className="my-20">
+          <div className="mt-20 mb-10">
               {/* social links and resume download */}
               <div className="flex xl:flex-col items-center xl:items-start mb-16 xl:mb-0 mt-12 xl:mt-0">
                 <div className="flex justify-between items-center w-full">
