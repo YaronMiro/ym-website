@@ -15,7 +15,7 @@ const Home: React.FC = () => {
   return (
   <>
     <div className="container pb-36">
-        <main className="flex flex-col xl:flex-row items-center xl:items-start xl:justify-between">
+        <main className="flex flex-col xl:flex-row items-center xl:items-start xl:justify-between px-14">
         {/* hero section */}
         <div className="flex flex-col justify-between">
           <div>
@@ -43,7 +43,7 @@ const Home: React.FC = () => {
               {/* social links and resume download */}
               <div className="flex xl:flex-col items-center xl:items-start mb-16 xl:mb-0 mt-12 xl:mt-0">
                 <div className="flex justify-between items-center w-full">
-                  <Social className="flex gap-5 w-full" iconStyles="text-xl" />
+                  <Social className="flex gap-2 w-full" iconStyles="text-xl" />
                   <Button
                     size="xs"
                     className="xl:hidden flex items-center uppercase gap-2"

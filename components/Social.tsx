@@ -32,7 +32,7 @@ const Social: React.FC<SocialProps> = ({ className, iconStyles }) => {
                                     {icon}
                                 </div>
                                 <span className="hidden xl:inline-block underline1 underline-offset-4 text-[1rem] capitalize ml-3 text-white/70 group-hover:text-white/80">
-                                    {name}
+                                    {/* {name} */}
                                 </span>
                            </div>
                         </Link>
