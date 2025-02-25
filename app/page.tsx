@@ -17,7 +17,7 @@ const Home: React.FC = () => {
     <div className="container pb-36">
         <main className="flex flex-col xl:flex-row items-center xl:items-start xl:justify-between px-14">
         {/* hero section */}
-        <div className="flex flex-col justify-between">
+        <div className="flex flex-col justify-between xl:">
           <div>
               {/* main Title */}
               <h1 className="flex flex-col font-semibold">
@@ -66,7 +66,7 @@ const Home: React.FC = () => {
           </div>
         </div>
         {/* Image and particles */}
-        <div className="relative flex justify-center">
+        <div className="relative flex justify-center mt-12  xl:mt-0 mb-8 xl:mb-0">
           <ParticlesContainer className="absolute bottom-10 w-full h-full z-[-9999] xl:right-0 xl:left-0" />
           <Image
             className="max-h-[550px] w-auto h-auto xl:h-[550px] px-8 xl:px-0 mt-32"
@@ -77,9 +77,9 @@ const Home: React.FC = () => {
           <div className="xl:block absolute bottom-[-15px] right-0 left-0 h-[15%] bg-gradient-to-b from-transparent to-primary"></div>
         </div>
       </main>
-        <footer className="">
+        <footer>
           {/* Icons */}
-          <div className="h-[1px] bg-white/20 w-full"></div>
+          <div className="h-[1px] bg-white/20 w-full z-50"></div>
           <div className="flex justify-center my-7 z-50">
             <HeroIcons iconColor="stroke-white/45" arrowColor="text-accent" />
           </div>
