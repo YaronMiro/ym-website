@@ -2,8 +2,7 @@ import * as React from "react"
 import Nav from '@/components/Nav';
 import MobileNav from '@/components/MobileNav';
 import Logo from "@/components/Logo";
-import { Button } from "@/components/ui/button";
-import { FiDownload } from "react-icons/fi";
+import ResumeButtonDownload from "./ResumeButtonDownload";
 
 const Header: React.FC = () => {
     return (
@@ -13,13 +12,7 @@ const Header: React.FC = () => {
                     <Logo className="text-6xl" />
                     <div className="flex gap-8">
                         <div className="hidden xl:flex items-center gap-8"><Nav /></div>
-                        <Button
-                            size="xs"
-                            className="hidden xl:flex items-center uppercase gap-2"
-                        >
-                            <span>Download CV</span>
-                            <FiDownload className="text-xl" />
-                        </Button>
+                        <ResumeButtonDownload className="hidden xl:flex" />
                     </div>
                     <div className="xl:hidden"><MobileNav /></div>
                 </div>
