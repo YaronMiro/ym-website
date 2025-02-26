@@ -14,7 +14,7 @@ const Home: React.FC = () => {
   return (
   <>
     <div className="container pb-36 pt-20">
-        <main className="flex flex-col xl:flex-row items-center xl:items-start xl:justify-between px-4">
+        <main className="flex flex-col xl:flex-row items-center xl:items-stretch px-4">
         {/* hero section */}
         <div className="flex flex-col justify-between">
           <div>
@@ -59,11 +59,11 @@ const Home: React.FC = () => {
           </div>
         </div>
         {/* Image and particles */}
-        <div className="relative flex flex-1 justify-end mt-12 xl:mt-0 mb-8 xl:mb-0">
+        <div className="relative flex flex-1 items-end justify-end mt-12 xl:mt-0 mb-8 xl:mb-0">
           <ParticlesContainer className="absolute bottom-10 w-full h-full z-[-9999] xl:right-0 xl:left-0" />
             <div className="relative">
               <Image
-                className="w-auto h-auto xl:h-[550px] px-8 xl:px-0"
+                className="w-auto h-auto xl:h-[550px]"
                 src={heroImage}
                 alt="Image of Yaron Miro"
               />
@@ -78,7 +78,7 @@ const Home: React.FC = () => {
           <div className="flex justify-center py-6">
             <HeroIcons iconColor="stroke-white/45" arrowColor="text-accent" />
           </div>
-          {/* <div className="h-[1px] bg-white/10 w-full"></div> */}
+          {/* <div className="h-[1px] bg-white/10 w-full mt-4"></div> */}
         </footer>
       </div>
     </>

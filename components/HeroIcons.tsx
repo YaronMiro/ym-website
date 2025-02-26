@@ -1,6 +1,7 @@
 import * as React from "react"
 
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { RxDividerVertical } from "react-icons/rx";
 import YmIcon, { IconName } from "@/components/YmIcon";
 
 interface HeroIconsProps {
