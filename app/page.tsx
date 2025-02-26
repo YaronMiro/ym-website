@@ -73,7 +73,7 @@ const Home: React.FC = () => {
             </div>
         </div>
       </main>
-        <div className="h-[2px] bg-white/10 w-full mt-12"></div>
+        <div className="h-[2px] bg-white/10 w-full mt-16"></div>
         <footer className="flex justify-center bg-primary mt-8">
           {/* Icons */}
           <HeroIcons iconColor="stroke-white/10" arrowColor="text-white/10" />
