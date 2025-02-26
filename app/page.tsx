@@ -13,7 +13,7 @@ import ResumeButtonDownload from "@/components/ResumeButtonDownload";
 const Home: React.FC = () => {
   return (
   <>
-    <div className="container pb-36">
+    <div className="container pb-36 pt-20">
         <main className="flex flex-col xl:flex-row items-center xl:items-start xl:justify-between px-4">
         {/* hero section */}
         <div className="flex flex-col justify-between">
@@ -63,7 +63,7 @@ const Home: React.FC = () => {
           <ParticlesContainer className="absolute bottom-10 w-full h-full z-[-9999] xl:right-0 xl:left-0" />
             <div className="relative">
               <Image
-                className="max-h-[550px] w-auto h-auto xl:h-[550px] px-8 xl:px-0 mt-32"
+                className="w-auto h-auto xl:h-[550px] px-8 xl:px-0"
                 src={heroImage}
                 alt="Image of Yaron Miro"
               />
@@ -72,12 +72,13 @@ const Home: React.FC = () => {
             </div>
         </div>
       </main>
-        <footer>
+        <footer className="pt-6">
           {/* Icons */}
-          {/* <div className="h-[1px] bg-white/20 w-full z-50"></div> */}
-          <div className="flex justify-center my-7 z-50">
+          {/* <div className="h-[1px] bg-white/10 w-full"></div> */}
+          <div className="flex justify-center py-6">
             <HeroIcons iconColor="stroke-white/45" arrowColor="text-accent" />
           </div>
+          {/* <div className="h-[1px] bg-white/10 w-full"></div> */}
         </footer>
       </div>
     </>
