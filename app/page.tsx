@@ -7,6 +7,7 @@ import Link from "next/link";
 import Social from "@/components/Social";
 import ParticlesContainer from '@/components/ParticlesContainer'
 import heroImage from '@/public/hero-image-1.png'
+import polygonBackground from '@/public/polygon-background.png'
 import HeroIcons from "@/components/HeroIcons";
 import ResumeButtonDownload from "@/components/ResumeButtonDownload";
 
@@ -72,12 +73,11 @@ const Home: React.FC = () => {
             </div>
         </div>
       </main>
-        <footer className="flex justify-center bg-primary mt-16">
-          {/* Icons */}
-          <HeroIcons iconColor="stroke-white/20" arrowColor="text-accent/50" />
-        </footer>
         <div className="h-[2px] bg-white/10 w-full mt-12"></div>
-
+        <footer className="flex justify-center bg-primary mt-8">
+          {/* Icons */}
+          <HeroIcons iconColor="stroke-white/10" arrowColor="text-white/10" />
+        </footer>
       </div>
     </>
   );
