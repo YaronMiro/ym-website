@@ -6,7 +6,7 @@ import { BsCodeSlash } from "react-icons/bs";
 import Link from "next/link";
 import Social from "@/components/Social";
 import ParticlesContainer from '@/components/ParticlesContainer'
-import heroImage from '@/public/hero-image-2.png'
+import heroImage from '@/public/hero-image-1.png'
 import HeroIcons from "@/components/HeroIcons";
 import ResumeButtonDownload from "@/components/ResumeButtonDownload";
 
@@ -60,10 +60,10 @@ const Home: React.FC = () => {
         </div>
         {/* Image and particles */}
         <div className="relative flex flex-1 items-end justify-end mt-12 xl:mt-0 mb-8 xl:mb-0">
-          <ParticlesContainer className="absolute bottom-10 w-full h-full z-[-9999] xl:right-0 xl:left-0" />
+            <ParticlesContainer className="absolute bottom-10 top-0 xl:top-[-100px] right-0 left-0 z-[-9999]" />
             <div className="relative">
               <Image
-                className="w-auto h-auto xl:h-[550px]"
+                className="w-auto h-auto xl:h-[650px]"
                 src={heroImage}
                 alt="Image of Yaron Miro"
               />
@@ -72,13 +72,9 @@ const Home: React.FC = () => {
             </div>
         </div>
       </main>
-        <footer className="pt-6">
+        <footer className="flex justify-center bg-primary mt-8">
           {/* Icons */}
-          {/* <div className="h-[1px] bg-white/10 w-full"></div> */}
-          <div className="flex justify-center py-6">
-            <HeroIcons iconColor="stroke-white/45" arrowColor="text-accent" />
-          </div>
-          {/* <div className="h-[1px] bg-white/10 w-full mt-4"></div> */}
+          <HeroIcons iconColor="stroke-white/45" arrowColor="text-accent" />
         </footer>
       </div>
     </>
