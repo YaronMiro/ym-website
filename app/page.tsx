@@ -14,9 +14,9 @@ const Home: React.FC = () => {
   return (
   <>
     <div className="container pb-36">
-        <main className="flex flex-col xl:flex-row items-center xl:items-start xl:justify-between px-14">
+        <main className="flex flex-col xl:flex-row items-center xl:items-start xl:justify-between px-4">
         {/* hero section */}
-        <div className="flex flex-col justify-between xl:">
+        <div className="flex flex-col justify-between">
           <div>
               {/* main Title */}
               <h1 className="flex flex-col font-semibold">
@@ -24,7 +24,7 @@ const Home: React.FC = () => {
                 <span className="mt-2 text-7xl text-accent">Yaron Miro</span>
               </h1>
               {/* role */}
-              <div className="flex items-center mt-20 gap-3">
+              <div className="flex items-center mt-12 gap-3">
                 <span className="text-secondary text-3xl">Senior Fullstack Developer</span>
                 <BsCodeSlash role="img" aria-label="developer icon" className="rounded-full p-[4px] w-[30px] h-[30px] border border-accent text-accent" />
               </div>
@@ -38,7 +38,7 @@ const Home: React.FC = () => {
                 </p>
               </div>
           </div>
-          <div className="mt-20 mb-12">
+          <div className="mt-24">
               {/* social links and resume download */}
               <div className="flex xl:flex-col items-center xl:items-start mt-12 xl:mt-0">
                 <div className="flex justify-between w-full">
@@ -59,7 +59,7 @@ const Home: React.FC = () => {
           </div>
         </div>
         {/* Image and particles */}
-        <div className="relative flex justify-center mt-12 xl:mt-0 mb-8 xl:mb-0">
+        <div className="relative flex flex-1 justify-end mt-12 xl:mt-0 mb-8 xl:mb-0">
           <ParticlesContainer className="absolute bottom-10 w-full h-full z-[-9999] xl:right-0 xl:left-0" />
             <div className="relative">
               <Image
@@ -74,7 +74,7 @@ const Home: React.FC = () => {
       </main>
         <footer>
           {/* Icons */}
-          <div className="h-[1px] bg-white/20 w-full z-50"></div>
+          {/* <div className="h-[1px] bg-white/20 w-full z-50"></div> */}
           <div className="flex justify-center my-7 z-50">
             <HeroIcons iconColor="stroke-white/45" arrowColor="text-accent" />
           </div>
