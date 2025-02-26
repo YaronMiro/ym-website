@@ -28,7 +28,7 @@ export const icons: IconData[] = [
 
 const HeroIcons: React.FC<HeroIconsProps> = ({ iconColor, arrowColor }) => {
     return (
-        <div className={`${iconColor} grid grid-cols-4 md:grid-cols-8 gap-x-2 xl:gap-x-3 gap-y-5 xl:gap-y-0`}>
+        <div className={`${iconColor} grid grid-cols-4 md:grid-cols-8 gap-x-2 xl:gap-x-2 gap-y-5 xl:gap-y-0`}>
             {icons.map(({ name, arrowDirection}) => {
                 return (
                     <div key={name} className="flex items-center justify-between">

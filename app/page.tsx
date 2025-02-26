@@ -69,15 +69,18 @@ const Home: React.FC = () => {
                 alt="Image of Yaron Miro"
               />
               {/* Fade bottom */}
-              <div className="absolute bottom-[0] right-0 left-0 h-[10%] bg-gradient-to-b from-transparent to-primary"></div>
+              <div className="absolute bottom-[0] right-0 left-0 h-[20%] bg-gradient-to-b from-transparent to-primary"></div>
             </div>
         </div>
       </main>
-        <div className="h-[2px] bg-white/10 w-full mt-16"></div>
-        <footer className="flex justify-center bg-primary mt-8">
-          {/* Icons */}
-          <HeroIcons iconColor="stroke-white/10" arrowColor="text-white/10" />
-        </footer>
+        <div className="flex justify-between items-stretch gap-8 mt-6">
+          <div className="h-[2px] flex-1 bg-white/20 mt-16"></div>
+          <footer className="flex justify-center bg-primary mt-8">
+            {/* Icons */}
+            <HeroIcons iconColor="stroke-white/20" arrowColor="text-accent/45" />
+          </footer>
+          <div className="h-[2px] flex-1 bg-white/20 mt-16"></div>
+        </div>
       </div>
     </>
   );
