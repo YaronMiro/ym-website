@@ -60,7 +60,7 @@ const Home: React.FC = () => {
         </div>
         {/* Image and particles */}
         <div className="relative flex flex-1 items-end justify-end mt-12 xl:mt-0 mb-8 xl:mb-0">
-            <ParticlesContainer className="absolute bottom-10 top-0 xl:top-[-100px] right-0 left-0 z-[-9999]" />
+            <ParticlesContainer className="absolute bottom-10 top-0 xl:top-[-100px] right-0 xl:right-[-50px] left-0 z-[-9999]" />
             <div className="relative">
               <Image
                 className="w-auto h-auto xl:h-[650px]"
@@ -72,10 +72,12 @@ const Home: React.FC = () => {
             </div>
         </div>
       </main>
-        <footer className="flex justify-center bg-primary mt-8">
+        <footer className="flex justify-center bg-primary mt-16">
           {/* Icons */}
-          <HeroIcons iconColor="stroke-white/45" arrowColor="text-accent" />
+          <HeroIcons iconColor="stroke-white/20" arrowColor="text-accent/50" />
         </footer>
+        <div className="h-[2px] bg-white/10 w-full mt-12"></div>
+
       </div>
     </>
   );
