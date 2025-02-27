@@ -72,13 +72,13 @@ const Home: React.FC = () => {
             </div>
           </div>
         </main>
-        <div className="flex justify-between items-stretch gap-8 mt-6">
-          <div className="h-[2px] flex-1 bg-white/20 mt-16"></div>
+        <div className="flex justify-center items-stretch gap-8 mt-6">
+          {/* <div className="h-[1px] flex-1 bg-white/20 mt-16"></div> */}
           <footer className="flex justify-center bg-primary mt-8">
             {/* Icons */}
             <HeroIcons iconColor="stroke-white/20" arrowColor="text-accent/45" />
           </footer>
-          <div className="h-[2px] flex-1 bg-white/20 mt-16"></div>
+          {/* <div className="h-[1px] flex-1 bg-white/20 mt-16"></div> */}
         </div>
       </div>
     </>
