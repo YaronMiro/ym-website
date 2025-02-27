@@ -12,12 +12,12 @@ import ResumeButtonDownload from "@/components/ResumeButtonDownload";
 
 const Home: React.FC = () => {
   return (
-  <>
-    <div className="container pb-36 pt-20">
+    <>
+      <div className="container pb-36 pt-20">
         <main className="flex flex-col xl:flex-row items-center xl:items-stretch px-4">
-        {/* hero section */}
-        <div className="flex flex-col justify-between">
-          <div>
+          {/* hero section */}
+          <div className="flex flex-col justify-between">
+            <div>
               {/* main Title */}
               <h1 className="flex flex-col font-semibold">
                 <span className="text-5xl text-white/70">Hello I&apos;m</span>
@@ -37,8 +37,8 @@ const Home: React.FC = () => {
                   Experienced in cloud technologies, DevOps, AI integration, and have a strong eye for design, all while consistently delivering high-quality, reliable software efficiently.
                 </p>
               </div>
-          </div>
-          <div className="mt-24">
+            </div>
+            <div className="mt-24">
               {/* social links and resume download */}
               <div className="flex xl:flex-col items-center xl:items-start mt-12 xl:mt-0">
                 <div className="flex justify-between w-full">
@@ -56,10 +56,10 @@ const Home: React.FC = () => {
                   <span className="font-semibold text-secondary group-hover:text-secondary-hover">Phone: </span>+972-544297621
                 </Link>
               </div>
+            </div>
           </div>
-        </div>
-        {/* Image and particles */}
-        <div className="relative flex flex-1 items-end justify-end mt-12 xl:mt-0 mb-8 xl:mb-0">
+          {/* Image and particles */}
+          <div className="relative flex flex-1 items-end justify-end mt-12 xl:mt-0 mb-8 xl:mb-0">
             <ParticlesContainer className="absolute bottom-10 top-0 xl:top-[-100px] right-0 xl:right-[-50px] left-0 z-[-9999]" />
             <div className="relative">
               <Image
@@ -70,8 +70,8 @@ const Home: React.FC = () => {
               {/* Fade bottom */}
               <div className="absolute bottom-[0] right-0 left-0 h-[20%] bg-gradient-to-b from-transparent to-primary"></div>
             </div>
-        </div>
-      </main>
+          </div>
+        </main>
         <div className="flex justify-between items-stretch gap-8 mt-6">
           <div className="h-[2px] flex-1 bg-white/20 mt-16"></div>
           <footer className="flex justify-center bg-primary mt-8">
