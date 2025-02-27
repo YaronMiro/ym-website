@@ -16,7 +16,6 @@ const Header: React.FC = () => {
                     </div>
                     <div className="xl:hidden"><MobileNav /></div>
                 </div>
-                <div className="h-[2px] bg-white/10 w-full mt-6"></div>
             </div>
         </header>
     );
