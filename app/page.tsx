@@ -6,8 +6,7 @@ import { BsCodeSlash } from "react-icons/bs";
 import Link from "next/link";
 import Social from "@/components/Social";
 import ParticlesContainer from '@/components/ParticlesContainer'
-import heroImage from '@/public/hero-image-1.png'
-import polygonBackground from '@/public/polygon-background.png'
+import heroImage from '@/public/hero-image.webp'
 import HeroIcons from "@/components/HeroIcons";
 import ResumeButtonDownload from "@/components/ResumeButtonDownload";
 
