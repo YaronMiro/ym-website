@@ -6,7 +6,7 @@ import ResumeButtonDownload from "./ResumeButtonDownload";
 
 const Header: React.FC = () => {
     return (
-        <header className="mb-8 py-12 text-white">
+        <header className="my-14 pb-8 text-white">
             <div className="container mx-auto">
                 <div className="flex justify-between items-center">
                     <Logo className="text-6xl" />
@@ -16,6 +16,7 @@ const Header: React.FC = () => {
                     </div>
                     <div className="xl:hidden"><MobileNav /></div>
                 </div>
+                {/* <div className="h-[1px] flex-1 bg-white/20 mt-8"></div> */}
             </div>
         </header>
     );
