@@ -67,7 +67,7 @@ const Home: React.FC = () => {
               <span className="font-semibold text-accent group-hover:text-secondary-hover">Phone: </span>+972-544297621
             </Link>
           </div>
-          <Social className="flex gap-4 xl:gap-5" iconStyles="text-[2rem]" />
+          <Social className="flex gap-4 xl:gap-5" iconStyles="text-3xl" />
         </div>
       </div>
     </>

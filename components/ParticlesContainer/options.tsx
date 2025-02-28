@@ -85,8 +85,8 @@ const options: ISourceOptions = {
         },
         opacity: {
             value: {
-                min: 0.3,
-                max: 0.6
+                min: 0.2,
+                max: 0.5
             },
             animation: {
                 count: 0,
@@ -246,7 +246,7 @@ const options: ISourceOptions = {
             distance: 150,
             enable: true,
             frequency: 350,
-            opacity: 0.5,
+            opacity: 0.4,
             width: 1,
             warp: false
         },
