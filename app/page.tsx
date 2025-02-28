@@ -21,12 +21,12 @@ const Home: React.FC = () => {
               {/* main Title */}
               <h1 className="flex flex-col font-semibold">
                 <span className="text-5xl text-white/70">Hello I&apos;m</span>
-                <span className="mt-2 text-7xl text-accent">Yaron Miro</span>
+                <span className="mt-2 text-7xl text-secondary">Yaron Miro</span>
               </h1>
               {/* role */}
               <div className="flex items-center mt-16 gap-3">
-                <span className="text-secondary text-3xl">Senior Fullstack Developer</span>
-                <BsCodeSlash role="img" aria-label="developer icon" className="rounded-full p-[4px] w-[30px] h-[30px] border border-accent text-accent" />
+                <span className="text-accent text-3xl">Senior Fullstack Developer</span>
+                <BsCodeSlash role="img" aria-label="developer icon" className="rounded-full p-[4px] w-[30px] h-[30px] border border-secondary text-secondary" />
               </div>
               <div className="xl:max-w-[500px] mt-3 leading-8 text-white/70 text-[1.1rem]">
                 <p>
@@ -52,24 +52,22 @@ const Home: React.FC = () => {
             <ParticlesContainer className="absolute bottom-10 top-0 xl:top-[-100px] right-0 xl:right-[-50px] left-0 z-[-9999]" />
           </div>
         </main>
-        <div className="flex mt-8">
-          <div className="flex justify-center bg-primary">
-            {/* Icons */}
-            <HeroIcons iconColor="stroke-white/20" arrowColor="text-accent/40" />
-          </div>
+        <div className="flex mt-12 justify-center">
+          {/* Icons */}
+          <HeroIcons iconColor="stroke-secondary" arrowColor="text-accent/70" />
         </div>
         {/* <div className="h-[1px] flex-1 bg-white/20 mt-16"></div> */}
-        <div className="flex gap-12 mt-24">
-          <Social className="flex gap-4 xl:gap-5" iconStyles="text-3xl" />
+        <div className="flex justify-between gap-12 mt-20">
           <div className="flex justify-between xl:justify-start gap-3 text-white/70 leading-8" >
             <Link href="mailto:yaron.miro@gmail.com" className="group hover:text-white/80">
-              <span className="font-semibold text-secondary group-hover:text-secondary-hover">Email: </span>yaron.miro@gmail.com
+              <span className="font-semibold text-accent group-hover:text-secondary-hover">Email: </span>yaron.miro@gmail.com
             </Link>
-            <span className="text-white/50">|</span>
+            <span className="text-secondary">|</span>
             <Link href="tel:+972--544297621" className="group hover:text-white/80">
-              <span className="font-semibold text-secondary group-hover:text-secondary-hover">Phone: </span>+972-544297621
+              <span className="font-semibold text-accent group-hover:text-secondary-hover">Phone: </span>+972-544297621
             </Link>
           </div>
+          <Social className="flex gap-4 xl:gap-5" iconStyles="text-[2rem]" />
         </div>
       </div>
     </>

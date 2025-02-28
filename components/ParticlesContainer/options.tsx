@@ -57,7 +57,7 @@ const options: ISourceOptions = {
         },
         color: {
             // @todo Fix using theme color
-            value: ["#cc983e", "#2d6c5a"], // accent and secondary
+            value: ["#ffffff", "#2d6c5a"], // accent and secondary
 
         },
         effect: {

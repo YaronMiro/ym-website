@@ -5,7 +5,7 @@ import { buttonVariants } from '@/components/ui/button';
 
 
 interface ResumeButtonDownloadProps {
-    className? : string
+    className?: string
 }
 
 const ResumeButtonDownload: React.FC<ResumeButtonDownloadProps> = ({ className }) => {
