@@ -34,6 +34,9 @@ const Home: React.FC = () => {
                   Experienced in cloud technologies, DevOps, AI integration, and have a strong eye for design, all while consistently delivering high-quality, reliable software efficiently.
                 </p>
               </div>
+              <div className="flex justify-end pt-16">
+                <ResumeButtonDownload className="xl:hidden" />
+              </div>
             </div>
           </div>
           {/* Image and particles */}
