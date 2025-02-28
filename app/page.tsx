@@ -18,8 +18,8 @@ const Home: React.FC = () => {
             <div>
               {/* main Title */}
               <h1 className="flex flex-col font-semibold">
-                <span className="text-5xl text-white/70">Hello I&apos;m</span>
-                <span className="text-[5rem] leading-[1.2] text-secondary">Yaron Miro</span>
+                <span className="text-5xl text-secondary">Hello I&apos;m</span>
+                <span className="text-[5rem] leading-[1.2] text-white/70">Yaron Miro</span>
               </h1>
               {/* role */}
               <div className="flex items-center mt-10 gap-3">
