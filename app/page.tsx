@@ -16,7 +16,7 @@ const Home: React.FC = () => {
       <div className="container pb-36 pt-20">
         <main className="relative flex flex-col xl:flex-row items-center xl:items-stretch px-4">
           {/* hero section */}
-          <div className="flex flex-col justify-center xl:max-w-[500px]">
+          <div className="flex flex-col justify-center w-full">
             <div>
               {/* main Title */}
               <h1 className="flex flex-col font-semibold">
@@ -26,8 +26,9 @@ const Home: React.FC = () => {
               {/* role */}
               <div className="flex items-center mt-16 gap-3">
                 <span className="text-secondary text-3xl">Senior Fullstack Developer</span>
+                <BsCodeSlash role="img" aria-label="developer icon" className="rounded-full p-[4px] w-[30px] h-[30px] border border-accent text-accent" />
               </div>
-              <div className="mt-3 leading-8 text-white/70 text-[1.1rem]">
+              <div className="xl:max-w-[500px] mt-3 leading-8 text-white/70 text-[1.1rem]">
                 <p>
                   With 10+ years of experience in backend and frontend, building scalable, high-performance web applications with modern technologies.
                 </p>
