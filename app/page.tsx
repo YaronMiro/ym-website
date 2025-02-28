@@ -52,24 +52,16 @@ const Home: React.FC = () => {
             <ParticlesContainer className="absolute bottom-10 top-0 xl:top-[-100px] right-0 xl:right-[-50px] left-0 z-[-9999]" />
           </div>
         </main>
-        <div className="flex justify-center items-stretch gap-8 mt-8">
+        <div className="flex mt-8">
           <div className="flex justify-center bg-primary">
             {/* Icons */}
             <HeroIcons iconColor="stroke-white/20" arrowColor="text-accent/40" />
           </div>
         </div>
         {/* <div className="h-[1px] flex-1 bg-white/20 mt-16"></div> */}
-        {/* description */}
-        <div className="flex flex-col gap-4 mt-24">
-          {/* social links and resume download */}
-          <div className="flex xl:flex-col items-center xl:items-start">
-            <div className="flex justify-between w-full">
-              <ResumeButtonDownload className="xl:hidden" />
-              <Social className="flex gap-4 xl:gap-5" iconStyles="text-3xl" />
-            </div>
-          </div>
-          {/* contact info */}
-          <div className="flex justify-between xl:justify-start gap-3 text-white/70" >
+        <div className="flex gap-12 mt-24">
+          <Social className="flex gap-4 xl:gap-5" iconStyles="text-3xl" />
+          <div className="flex justify-between xl:justify-start gap-3 text-white/70 leading-8" >
             <Link href="mailto:yaron.miro@gmail.com" className="group hover:text-white/80">
               <span className="font-semibold text-secondary group-hover:text-secondary-hover">Email: </span>yaron.miro@gmail.com
             </Link>

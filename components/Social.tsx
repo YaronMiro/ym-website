@@ -10,9 +10,9 @@ interface SocialProps {
 
 
 const socials = [
-    { name: 'github', icon: <FaGithub />, path: "https://github.com/YaronMiro?tab=repositories&q=&type=&language=&sort=stargazers"},
-    { name: "linkedin", icon: <FaLinkedin />, path: "https://www.linkedin.com/in/yaronmiro/"},
-    { name: "behance", icon: <FaBehanceSquare />, path: "https://www.behance.net/gallery/49574621/All"},
+    { name: 'github', icon: <FaGithub />, path: "https://github.com/YaronMiro?tab=repositories&q=&type=&language=&sort=stargazers" },
+    { name: "linkedin", icon: <FaLinkedin />, path: "https://www.linkedin.com/in/yaronmiro/" },
+    { name: "behance", icon: <FaBehanceSquare />, path: "https://www.behance.net/gallery/49574621/All" },
 ]
 
 const Social: React.FC<SocialProps> = ({ className, iconStyles }) => {
@@ -27,11 +27,11 @@ const Social: React.FC<SocialProps> = ({ className, iconStyles }) => {
                             href={path}
                             target="_blank"
                         >
-                           <div className="flex items-center">
-                                <div className={`flex justify-center text-white/70 group-hover:text-white/80 ${iconStyles}`}>
+                            <div className="flex items-center">
+                                <div className={`flex justify-center text-secondary/70 group-hover:text-secondary/80 ${iconStyles}`}>
                                     {icon}
                                 </div>
-                           </div>
+                            </div>
                         </Link>
                     )
                 })
