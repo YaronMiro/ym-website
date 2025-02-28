@@ -11,11 +11,11 @@ import ResumeButtonDownload from "@/components/ResumeButtonDownload";
 const Home: React.FC = () => {
   return (
     <>
-      <div className="container pt-20">
-        <main className="relative flex flex-col xl:flex-row items-center xl:items-stretch px-4">
+      <div className="container pt-10 xl:pt-20">
+        <main className="relative flex flex-col xl:flex-row items-center xl:items-stretch">
           {/* hero section */}
-          <div className="flex flex-col justify-center w-full">
-            <div>
+          <div className="flex flex-col justify-center xl:w-full">
+            <div className="max-w-none lg:max-w-[750px]">
               {/* main Title */}
               <h1 className="flex flex-col font-semibold">
                 <span className="text-5xl text-secondary">Hello I&apos;m</span>
@@ -37,10 +37,10 @@ const Home: React.FC = () => {
             </div>
           </div>
           {/* Image and particles */}
-          <div className="relative flex justify-end w-full">
+          <div className="relative flex justify-center xl:justify-end w-full mt-24 xl:mt-0">
             <div className="relative">
               <Image
-                className="w-auto h-auto xl:h-[570px]"
+                className="w-auto h-auto lg:h-[570px]"
                 src={heroImage}
                 alt="Image of Yaron Miro"
               />
@@ -50,7 +50,7 @@ const Home: React.FC = () => {
             <ParticlesContainer className="absolute bottom-10 top-0 xl:top-[-100px] right-0 xl:right-[-50px] left-0 z-[-9999]" />
           </div>
         </main>
-        <div className="flex mt-12 justify-center">
+        <div className="flex mt-8 xl:mt-12 justify-center">
           <HeroIcons iconColor="stroke-secondary" arrowColor="text-accent/70" />
         </div>
       </div>
