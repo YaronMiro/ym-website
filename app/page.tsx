@@ -11,11 +11,11 @@ import ResumeButtonDownload from "@/components/ResumeButtonDownload";
 const Home: React.FC = () => {
   return (
     <>
-      <div className="container pt-10 xl:pt-20">
+      <div className="container pt-6 xl:pt-20">
         <main className="relative flex flex-col xl:flex-row items-center xl:items-stretch">
           {/* hero section */}
           <div className="flex flex-col justify-center xl:w-full">
-            <div className="max-w-none lg:max-w-[750px]">
+            <div className="max-w-[600px] px-4 md:max-w-[750px]">
               {/* main Title */}
               <h1 className="flex flex-col font-semibold">
                 <span className="text-5xl text-secondary">Hello I&apos;m</span>
@@ -40,7 +40,7 @@ const Home: React.FC = () => {
           <div className="relative flex justify-center xl:justify-end w-full mt-24 xl:mt-0">
             <div className="relative">
               <Image
-                className="w-auto h-auto lg:h-[570px]"
+                className="w-auto h-auto md:h-[570px]"
                 src={heroImage}
                 alt="Image of Yaron Miro"
               />
