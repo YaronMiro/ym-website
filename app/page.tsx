@@ -40,7 +40,7 @@ const Home: React.FC = () => {
             </div>
           </div>
           {/* Image and particles */}
-          <div className="relative flex justify-center xl:justify-end w-full mt-24 xl:mt-0">
+          <div className="relative flex justify-center xl:justify-end w-full mt-24 xl:mt-0 xl:pr-12">
             <div className="relative">
               <Image
                 className="w-auto h-auto md:h-[570px]"
