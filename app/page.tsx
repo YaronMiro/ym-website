@@ -15,7 +15,7 @@ const Home: React.FC = () => {
         <main className="relative flex flex-col xl:flex-row items-center xl:items-stretch">
           {/* hero section */}
           <div className="flex flex-col justify-center xl:w-full">
-            <div className="max-w-[600px] px-4 md:max-w-[750px]">
+            <div className="max-w-[600px] md:max-w-[750px]">
               {/* main Title */}
               <h1 className="flex flex-col font-semibold">
                 <span className="text-5xl text-secondary">Hello I&apos;m</span>
@@ -23,7 +23,7 @@ const Home: React.FC = () => {
               </h1>
               {/* role */}
               <div className="flex items-center mt-10 gap-3">
-                <span className="text-accent text-3xl">Senior Fullstack Developer</span>
+                <span className="text-accent text-[1.7rem]">Senior Full Stack Developer</span>
                 <BsCodeSlash role="img" aria-label="developer icon" className="rounded-full p-[4px] w-[30px] h-[30px] border border-secondary text-secondary" />
               </div>
               <div className="xl:max-w-[500px] mt-3 leading-8 text-white/70 text-[1.1rem]">
@@ -34,13 +34,14 @@ const Home: React.FC = () => {
                   Experienced in cloud technologies, DevOps, AI integration, and have a strong eye for design, all while consistently delivering high-quality, reliable software efficiently.
                 </p>
               </div>
-              <div className="flex justify-end pt-16">
-                <ResumeButtonDownload className="xl:hidden" />
+              <div className="xl:hidden relative flex justify-start items-center mt-10 gap-5">
+                <div className="h-[1px] flex-1 bg-white/20"></div>
+                <ResumeButtonDownload />
               </div>
             </div>
           </div>
           {/* Image and particles */}
-          <div className="relative flex justify-center xl:justify-end w-full mt-24 xl:mt-0 xl:pr-12">
+          <div className="relative flex justify-center xl:justify-end w-full mt-20 xl:mt-0 xl:pr-28">
             <div className="relative">
               <Image
                 className="w-auto h-auto md:h-[570px]"
