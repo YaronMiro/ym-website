@@ -28,7 +28,7 @@ const Social: React.FC<SocialProps> = ({ className, iconStyles }) => {
                             target="_blank"
                         >
                             <div className="flex items-center">
-                                <div className={`flex justify-center text-white/60 group-hover:text-white ${iconStyles}`}>
+                                <div className={`flex justify-center text-accent group-hover:text-accent-hover ${iconStyles}`}>
                                     {icon}
                                 </div>
                             </div>

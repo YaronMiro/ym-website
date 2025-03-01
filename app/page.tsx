@@ -52,7 +52,7 @@ const Home: React.FC = () => {
           </div>
         </main>
         <div className="flex mt-8 xl:mt-20 justify-center">
-          <HeroIcons iconColor="stroke-secondary" arrowColor="text-accent/70" />
+          <HeroIcons iconColor="stroke-secondary" arrowColor="text-accent" />
         </div>
       </div>
     </>
