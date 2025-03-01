@@ -24,7 +24,7 @@ const Home: React.FC = () => {
               {/* role */}
               <div className="flex items-center mt-10 gap-3">
                 <span className="text-accent text-[1.7rem]">Senior Full Stack Developer</span>
-                <BsCodeSlash role="img" aria-label="developer icon" className="rounded-full p-[4px] w-[30px] h-[30px] border border-secondary text-secondary" />
+                <BsCodeSlash role="img" aria-label="developer icon" className="rounded-full p-[4px] w-[35px] h-[35px] border border-secondary text-secondary" />
               </div>
               <div className="xl:max-w-[500px] mt-3 leading-8 text-white/70 text-[1.1rem]">
                 <p>
