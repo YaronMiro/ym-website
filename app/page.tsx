@@ -12,7 +12,7 @@ const Home: React.FC = () => {
   return (
     <>
       <div className="container pt-6 xl:pt-16">
-        <main className="relative flex flex-col xl:flex-row items-center xl:items-stretch">
+        <main className="relative flex flex-col xl:flex-row items-center xl:items-start">
           {/* hero section */}
           <div className="flex flex-col justify-center xl:w-full">
             <div className="max-w-[600px] md:max-w-[650px]">
@@ -38,10 +38,10 @@ const Home: React.FC = () => {
             </div>
           </div>
           {/* Image and particles */}
-          <div className="relative flex justify-center xl:justify-end w-full mt-20 xl:mt-0 xl:pr-28">
+          <div className="relative flex justify-center xl:justify-end w-full pt-24 xl:pt-0 mt-12 xl:mt-0 xl:pr-28">
             <div className="relative">
               <Image
-                className="w-auto h-auto md:h-[570px]"
+                className="h-[570px] w-auto"
                 src={heroImage}
                 alt="Image of Yaron Miro"
               />
