@@ -51,7 +51,7 @@ const Home: React.FC = () => {
             <ParticlesContainer className="absolute bottom-10 top-0 xl:top-[-100px] right-0 xl:right-[-50px] left-0 z-[-9999]" />
           </div>
         </main>
-        <div className="flex mt-8 xl:mt-20 justify-center">
+        <div className="flex mt-12 xl:mt-20 justify-center">
           <HeroIcons iconColor="stroke-secondary" arrowColor="text-accent" />
         </div>
       </div>
