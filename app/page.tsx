@@ -11,11 +11,11 @@ import ResumeButtonDownload from "@/components/ResumeButtonDownload";
 const Home: React.FC = () => {
   return (
     <>
-      <div className="container pt-6 xl:pt-20">
+      <div className="container pt-6 xl:pt-16">
         <main className="relative flex flex-col xl:flex-row items-center xl:items-stretch">
           {/* hero section */}
           <div className="flex flex-col justify-center xl:w-full">
-            <div className="max-w-[600px] md:max-w-[750px]">
+            <div className="max-w-[600px] md:max-w-[650px]">
               {/* main Title */}
               <h1 className="flex flex-col font-semibold">
                 <span className="text-5xl text-secondary">Hello I&apos;m</span>
@@ -33,10 +33,7 @@ const Home: React.FC = () => {
                 <p className="mt-4">
                   Experienced in cloud technologies, DevOps, AI integration, and have a strong eye for design, all while consistently delivering high-quality, reliable software efficiently.
                 </p>
-              </div>
-              <div className="xl:hidden relative flex justify-start items-center mt-10 gap-5">
-                <div className="h-[1px] flex-1 bg-white/20"></div>
-                <ResumeButtonDownload />
+                <ResumeButtonDownload className="mt-10" />
               </div>
             </div>
           </div>
@@ -54,7 +51,7 @@ const Home: React.FC = () => {
             <ParticlesContainer className="absolute bottom-10 top-0 xl:top-[-100px] right-0 xl:right-[-50px] left-0 z-[-9999]" />
           </div>
         </main>
-        <div className="flex mt-8 xl:mt-12 justify-center">
+        <div className="flex mt-8 xl:mt-20 justify-center">
           <HeroIcons iconColor="stroke-secondary" arrowColor="text-accent/70" />
         </div>
       </div>
