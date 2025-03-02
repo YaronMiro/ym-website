@@ -41,7 +41,7 @@ const Home: React.FC = () => {
           <div className="relative flex justify-center xl:justify-end w-full pt-24 xl:pt-0 mt-12 xl:mt-0 xl:pr-28">
             <div className="relative">
               <Image
-                className="h-[570px] w-auto"
+                className=" h-auto sm:h-[570px] w-auto"
                 src={heroImage}
                 alt="Image of Yaron Miro"
               />
