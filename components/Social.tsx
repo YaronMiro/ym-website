@@ -12,7 +12,7 @@ interface SocialProps {
 const socials = [
     { name: 'github', icon: <FaGithub />, path: "https://github.com/YaronMiro?tab=repositories&q=&type=&language=&sort=stargazers" },
     { name: "linkedin", icon: <FaLinkedin />, path: "https://www.linkedin.com/in/yaronmiro/" },
-    { name: "behance", icon: <FaBehanceSquare />, path: "https://www.behance.net/gallery/49574621/All" },
+    // { name: "behance", icon: <FaBehanceSquare />, path: "https://www.behance.net/gallery/49574621/All" },
 ]
 
 const Social: React.FC<SocialProps> = ({ className, iconStyles }) => {

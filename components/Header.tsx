@@ -1,6 +1,7 @@
 import * as React from "react"
 import MobileNav from '@/components/MobileNav';
 import Logo from "@/components/Logo";
+import Nav from "@/components/Nav";
 
 const Header: React.FC = () => {
     return (
@@ -8,7 +9,8 @@ const Header: React.FC = () => {
             <div className="container mx-auto">
                 <div className="flex justify-between items-center">
                     <Logo className="text-6xl" />
-                    <div><MobileNav /></div>
+                    <div className="flex xl:hidden"><MobileNav /></div>
+                    <div className="hidden xl:flex"><Nav /></div>
                 </div>
             </div>
         </header>
@@ -16,3 +18,4 @@ const Header: React.FC = () => {
 };
 
 export default Header;
+

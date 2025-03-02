@@ -7,4 +7,12 @@ export const NAV_LINKS = [
         name: 'resume',
         path: '/resume',
     },
+    {
+        name: 'contact me',
+        path: '/contact',
+    },
+    {
+        name: 'portfolio',
+        path: '/portfolio',
+    },
 ];

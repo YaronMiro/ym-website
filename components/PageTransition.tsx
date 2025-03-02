@@ -14,11 +14,11 @@ const PageTransition: React.FC<PageTransitionProps> = ({ children }) => {
     return (
         <AnimatePresence>
             <div key={pathName}>
-                <motion.div 
-                    initial={{ opacity: 1}}
+                <motion.div
+                    initial={{ opacity: 1 }}
                     animate={{
                         opacity: 0,
-                        transition: { delay: 0.4, duration: 0.25, ease: 'easeInOut'}
+                        transition: { delay: 0.4, duration: 0.25, ease: 'easeInOut' }
                     }}
                     className="h-screen w-screen fixed bg-primary top-0 pointer-events-none"
                 />

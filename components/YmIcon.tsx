@@ -9,21 +9,21 @@ interface YmIconProps {
     className: string;
 }
 
-export const iconsMapping: { [key in IconName]: string}  = {
+export const iconsMapping: { [key in IconName]: `ym-icon-${key}.svg` } = {
     "head": "ym-icon-head.svg",
     "app-code": "ym-icon-app-code.svg",
-    "cloud-shield": "ym-cloud-shield.svg",
-    "api": "ym-api.svg",
-    "ui": "ym-ui.svg",
-    "cloud-balancer": "ym-cloud-balancer.svg",
-    "bug-tracker": "ym-bug-tracker.svg",
-    "todo-list": "ym-todo-list.svg",
+    "cloud-shield": "ym-icon-cloud-shield.svg",
+    "api": "ym-icon-api.svg",
+    "ui": "ym-icon-ui.svg",
+    "cloud-balancer": "ym-icon-cloud-balancer.svg",
+    "bug-tracker": "ym-icon-bug-tracker.svg",
+    "todo-list": "ym-icon-todo-list.svg",
 };
 
 const YmIcon: React.FC<YmIconProps> = ({ className, icon }) => {
     return (
         <div>
-            {}
+            { }
             <ReactSVG
                 src={`/icons/${iconsMapping[icon]}`}
                 className={className}

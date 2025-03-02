@@ -17,13 +17,12 @@ const MobileNav: React.FC = () => {
             </SheetTrigger>
             <SheetContent className="flex flex-col">
                 {/* Logo */}
-                    <Logo className="mt-28 mb-16 text-center text-5xl" />
+                <Logo className="mt-28 mb-16 text-center text-5xl" />
                 <nav className="flex flex-col justify-center items-center gap-8">
-                    {NAV_LINKS.map(({name, path}) => {
+                    {NAV_LINKS.map(({ name, path }) => {
                         return (
                             <Link
-                                className={`${
-                                    path === pathName && "text-accent border-b-2 border-accent"
+                                className={`${path === pathName && "text-accent border-b-2 border-accent"
                                     } capitalize font-medium hover:text-accent transition-all
                                 `}
                                 href={path}
@@ -32,11 +31,11 @@ const MobileNav: React.FC = () => {
                                 {name}
                             </Link>
                         )
-                })}
+                    })}
                 </nav>
             </SheetContent>
         </Sheet>
-       
+
     );
 };
 
