@@ -3,6 +3,7 @@
 import React from "react";
 import Image from 'next/image'
 // import { BsCodeSlash } from "react-icons/bs";
+import { BsFillLightningFill } from "react-icons/bs";
 import ParticlesContainer from '@/components/ParticlesContainer'
 import heroImage from '@/public/hero-image.webp'
 import HeroIcons from "@/components/HeroIcons";
@@ -54,6 +55,22 @@ const Home: React.FC = () => {
         <div className="flex mt-12 xl:mt-20 justify-center">
           <HeroIcons iconColor="stroke-secondary" arrowColor="text-accent" />
         </div>
+        <div className="h-[1px] flex-1 bg-white/20 mt-14"></div>
+        <div >
+          <p className="text-2xl text-center text-white/70 mt-20">Choose Your Mood</p>
+          <div className="flex justify-between">
+            <div className="flex flex-col gap-4 text-accent">
+              <div className="flex border-2 border-accent rounded-full p-5 text-5xl mt-6">
+                < BsFillLightningFill />
+              </div>
+              {/* <span className="text-xl">Empowered</span> */}
+            </div>
+          </div>
+        </div>
+        {/* <div className="text-5xl w-full mt-32">
+          <p>I am <span className="text-accent">unique</span> and <span className="text-accent">different</span> </p>
+          <p>and <span className="text-accent">shine</span> in my own way</p>
+        </div> */}
       </div>
     </>
   );
