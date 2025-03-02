@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from 'next/image'
-import { BsCodeSlash } from "react-icons/bs";
+// import { BsCodeSlash } from "react-icons/bs";
 import ParticlesContainer from '@/components/ParticlesContainer'
 import heroImage from '@/public/hero-image.webp'
 import HeroIcons from "@/components/HeroIcons";
@@ -23,8 +23,8 @@ const Home: React.FC = () => {
               </h1>
               {/* role */}
               <div className="flex items-center mt-10 gap-3">
-                <span className="text-accent text-[1.7rem]">Senior Full Stack Developer</span>
-                <BsCodeSlash role="img" aria-label="developer icon" className="rounded-full p-[4px] w-[35px] h-[35px] border border-secondary text-secondary" />
+                <span className="text-accent text-3xl">Senior Full Stack Developer</span>
+                {/* <BsCodeSlash role="img" aria-label="developer icon" className="rounded-full p-[4px] w-[35px] h-[35px] border border-secondary text-secondary" /> */}
               </div>
               <div className="xl:max-w-[500px] mt-3 leading-8 text-white/70 text-[1.1rem]">
                 <p>
