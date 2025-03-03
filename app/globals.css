@@ -77,4 +77,16 @@
   .logo {
     @apply font-logo font-semibold text-white/70;
   }
+
+
+  .gradient-top {
+    @apply absolute left-0 right-0 top-0 w-full h-24 opacity-20;
+    background: linear-gradient(180deg, #2d6c5a 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+
+  .gradient-bottom {
+    @apply absolute left-0 right-0 bottom-0 w-full h-24 opacity-20;
+    background: linear-gradient(0deg, #2d6c5a 0%, rgba(255, 255, 255, 0) 100%);
+  }
 }

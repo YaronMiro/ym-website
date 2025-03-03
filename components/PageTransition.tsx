@@ -13,7 +13,7 @@ const PageTransition: React.FC<PageTransitionProps> = ({ children }) => {
 
     return (
         <AnimatePresence>
-            <div key={pathName}>
+            <div key={pathName} className="flex-grow">
                 <motion.div
                     initial={{ opacity: 1 }}
                     animate={{

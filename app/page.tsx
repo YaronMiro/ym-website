@@ -55,17 +55,15 @@ const Home: React.FC = () => {
         <div className="flex mt-12 xl:mt-20 justify-center">
           <HeroIcons iconColor="stroke-secondary" arrowColor="text-accent" />
         </div>
-        <div className="h-[1px] flex-1 bg-white/20 mt-14"></div>
-        <div >
-          <p className="text-2xl text-center text-white/70 mt-20">Choose Your Mood</p>
-          <div className="flex justify-between">
-            <div className="flex flex-col gap-4 text-accent">
-              <div className="flex border-2 border-accent rounded-full p-5 text-5xl mt-6">
-                < BsFillLightningFill />
-              </div>
-              {/* <span className="text-xl">Empowered</span> */}
-            </div>
+        {/* <span className="text-5xl text-secondary">Skills</span> */}
+
+        {/* <div className="h-[1px] flex-1 bg-accent/20 mt-24"></div> */}
+        <div className="relative rotate-180">
+          <div className="border border-1 border-accent/25 w-full h-[500px] rounded-lg mt-20 p-4">
+            <div className="bg-secondary w-full h-full rounded-lg opacity-20"></div>
           </div>
+          {/* Fade bottom */}
+          <div className="absolute bottom-[0] right-0 left-0 h-[80%] bg-gradient-to-b from-transparent to-primary"></div>
         </div>
         {/* <div className="text-5xl w-full mt-32">
           <p>I am <span className="text-accent">unique</span> and <span className="text-accent">different</span> </p>

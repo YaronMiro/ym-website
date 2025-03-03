@@ -39,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${fontsVars.join(' ')} antialiased`}
+        className={`flex flex-col min-h-screen ${fontsVars.join(' ')} antialiased`}
       >
         <Header />
         <PageTransition>

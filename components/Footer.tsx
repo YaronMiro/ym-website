@@ -4,10 +4,9 @@ import Link from "next/link";
 
 const Footer: React.FC = () => {
     return (
-
-        <footer className="my-14 pt-8">
+        <footer className="relative mt-14 pb-16 pt-8">
             <div className="container mx-auto">
-                {/* <div className="h-[1px] flex-1 bg-white/20"></div> */}
+                {/* <div className="h-[1px] flex-1 bg-white/15"></div> */}
                 <div className="flex justify-center md:justify-start">
                     <div className="inline-flex w-auto md:w-full md:flex flex-col md:flex-row-reverse md:justify-between gap-4 md:gap-0 mt-8">
                         <Social className="flex gap-4 xl:gap-5" iconStyles="text-3xl" />
@@ -25,6 +24,7 @@ const Footer: React.FC = () => {
                     </div>
                 </div>
             </div>
+            {/* <div className="gradient-bottom"></div> */}
         </footer>
     );
 };
