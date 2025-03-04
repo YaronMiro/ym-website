@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
                 <div className="flex justify-center md:justify-start">
                     <div className="inline-flex w-auto md:w-full md:flex flex-col md:flex-row-reverse md:justify-between gap-4 md:gap-0 mt-8">
                         <Social className="flex gap-4 xl:gap-5" iconStyles="text-3xl" />
-                        <div className="flex gap-3 flex-col md:flex-row text-white/70 mt-2 md:mt-0 md:leading-8">
+                        <div className="flex gap-3 flex-col md:flex-row text-white/50 mt-2 md:mt-0 md:leading-8">
                             <Link href="mailto:yaron.miro@gmail.com" className="flex flex-col md:flex-row group gap-0 md:gap-2 hover:text-white">
                                 <span className="font-semibold text-accent group-hover:text-accent-hover">Email </span>
                                 <span>yaron.miro@gmail.com</span>

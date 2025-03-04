@@ -75,7 +75,7 @@
   }
 
   .logo {
-    @apply font-logo font-semibold text-white/70;
+    @apply font-logo font-semibold text-white/50;
   }
 
 
