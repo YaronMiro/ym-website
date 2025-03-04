@@ -55,15 +55,48 @@ const Home: React.FC = () => {
         <div className="flex mt-12 xl:mt-20 justify-center">
           <HeroIcons iconColor="stroke-secondary" arrowColor="text-accent" />
         </div>
-        {/* <span className="text-5xl text-secondary">Skills</span> */}
+        <div className="h-[1px] flex-1 bg-white/15 my-24"></div>
 
-        {/* <div className="h-[1px] flex-1 bg-accent/20 mt-24"></div> */}
-        <div className="relative rotate-180">
-          <div className="border border-1 border-accent/25 w-full h-[500px] rounded-lg mt-20 p-4">
-            <div className="bg-secondary w-full h-full rounded-lg opacity-20"></div>
+        {/* <div className="relative mb-12 mt-24 text-center text-3xl text-white/70 after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t after:border-secondary">
+          <span className="relative z-10 bg-primary py-2 px-4 rounded-lg text-white/70">
+            Skills
+          </span>
+        </div> */}
+        <div className="mb-7 mx-auto w-9/12">
+          <div className="mb-7">
+            <div className="flex justify-between py-1 text-base text-white/70">
+              <span>Backend</span>
+              <span className="pr-5">85%</span>
+            </div>
+            <svg
+              className="rc-progress-line"
+              viewBox="0 0 100 1"
+              preserveAspectRatio="none"
+            >
+              <path
+                className="rc-progress-line-trail text-secondary"
+                d="M 0.5,0.5 L 99.5,0.5"
+                strokeLinecap="round"
+                stroke="currentColor"
+                strokeWidth="1"
+                fillOpacity="0"
+              />
+              <path
+                className="rc-progress-line-path text-accent"
+                d="M 0.5,0.5 L 99.5,0.5"
+                strokeLinecap="round"
+                stroke="currentColor"
+                strokeWidth="1"
+                fillOpacity="0"
+                style={{
+                  strokeDasharray: "64.25px, 100px",
+                  strokeDashoffset: "0px",
+                  transition:
+                    "stroke-dashoffset 0.3s ease 0s, stroke-dasharray 0.3s ease 0s, stroke 0.3s linear 0s, 0.06s",
+                }}
+              />
+            </svg>
           </div>
-          {/* Fade bottom */}
-          <div className="absolute bottom-[0] right-0 left-0 h-[80%] bg-gradient-to-b from-transparent to-primary"></div>
         </div>
         {/* <div className="text-5xl w-full mt-32">
           <p>I am <span className="text-accent">unique</span> and <span className="text-accent">different</span> </p>
