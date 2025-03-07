@@ -25,7 +25,7 @@ const Home: React.FC = () => {
               {/* role */}
               <div className="flex items-center mt-10 gap-3">
                 <span className="text-white/50 text-3xl">Senior Full Stack Developer</span>
-                <BsCodeSlash role="img" aria-label="developer icon" className="rounded-full p-[4px] w-[35px] h-[35px] border border-secondary text-secondary" />
+                <BsCodeSlash role="img" aria-label="developer icon" className="rounded-full p-[4px] w-[35px] h-[35px] border border-accent text-accent" />
               </div>
               <div className="xl:max-w-[500px] mt-3 leading-8 text-white/50 text-[1.1rem]">
                 <p>
@@ -54,14 +54,14 @@ const Home: React.FC = () => {
         {/* <div className="h-[1px] flex-1 bg-white/15 my-24"></div> */}
         <div className="flex items-center justify-between mt-12 xl:mt-14">
           <ResumeButtonDownload />
-          <HeroIcons iconColor="stroke-secondary" arrowColor="text-accent" />
+          <HeroIcons iconColor="stroke-secondary" arrowColor="text-white/40" />
         </div>
-        <div className="relative mb-12 mt-24 text-2xl text-secondary after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t after:border-white/15">
-          <span className="relative z-10 bg-primary ml-8 pl-4 pr-4 rounded-lg text-white/50">
+        <div className="flex relative justify-center mb-12 mt-32 text-2xl text-secondary after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t after:border-white/20">
+          <span className="relative z-10 bg-primary px-8 rounded-lg text-accent">
             Skills
           </span>
         </div>
-        <div className="flex mb-7 mt-32 gap-12">
+        <div className="flex mb-7 mt-20 gap-12">
           <div className="w-full mb-7">
             <div className="flex justify-between py-1 text-base text-white/50">
               <span>Backend</span>
