@@ -16,7 +16,7 @@ const Home: React.FC = () => {
         <main className="relative flex flex-col xl:flex-row items-center">
           {/* hero section */}
           <div className="flex flex-col justify-center xl:w-full">
-            <div className="max-w-[600px] md:max-w-[650px]">
+            <div className="max-w-[600px] md:max-w-[650px] md:-mt-14">
               {/* main Title */}
               <h1 className="flex flex-col font-semibold">
                 <span className="text-5xl text-secondary">Hello I&apos;m</span>
@@ -24,8 +24,8 @@ const Home: React.FC = () => {
               </h1>
               {/* role */}
               <div className="flex items-center mt-10 gap-3">
-                <span className="text-white text-2xl">Senior Full Stack Developer</span>
-                <BsCodeSlash role="img" aria-label="developer icon" className="rounded-full p-[4px] w-[30px] h-[30px] border border-accent text-accent" />
+                <span className="font-semibold text-secondary text-2xl">Senior Full Stack Developer</span>
+                <BsCodeSlash role="img" aria-label="developer icon" className="rounded-full p-[4px] w-[30px] h-[30px] border border-secondary text-secondary" />
               </div>
               <div className="xl:max-w-[500px] mt-3 leading-8 text-white text-[1.1rem]">
                 <p>
@@ -56,12 +56,12 @@ const Home: React.FC = () => {
           <ResumeButtonDownload />
           <HeroIcons iconColor="stroke-secondary" arrowColor="text-accent" />
         </div>
-        <div className="flex relative justify-center mb-12 mt-32 text-2xl text-secondary after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t after:border-secondary">
+        <div className="flex relative justify-center md:-mx-24 mb-12 mt-32 text-2xl text-secondary after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t after:border-secondary">
           <span className="relative z-10 bg-primary px-4 rounded-lg text-accent">
             Skills
           </span>
         </div>
-        <div className="flex mb-7 mt-20 gap-12">
+        <div className="flex mb-7 mt-32 gap-12">
           <div className="w-full mb-7">
             <div className="flex justify-between py-1 text-base text-white">
               <span>Backend</span>
