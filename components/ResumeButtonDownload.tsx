@@ -14,7 +14,7 @@ const ResumeButtonDownload: React.FC<ResumeButtonDownloadProps> = ({ className }
             href="/ym-resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className={`${buttonVariants({ size: "xs", variant: "outline" })} flex items-center uppercase gap-2 ${className}`}
+            className={`${buttonVariants({ size: "xs" })} flex items-center uppercase gap-2 ${className}`}
         >
             <span>Download CV</span>
             <FiDownload className="text-xl" />

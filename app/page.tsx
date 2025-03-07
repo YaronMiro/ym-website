@@ -24,10 +24,10 @@ const Home: React.FC = () => {
               </h1>
               {/* role */}
               <div className="flex items-center mt-10 gap-3">
-                <span className="text-white/50 text-3xl">Senior Full Stack Developer</span>
-                <BsCodeSlash role="img" aria-label="developer icon" className="rounded-full p-[4px] w-[35px] h-[35px] border border-accent text-accent" />
+                <span className="text-white text-2xl">Senior Full Stack Developer</span>
+                <BsCodeSlash role="img" aria-label="developer icon" className="rounded-full p-[4px] w-[30px] h-[30px] border border-accent text-accent" />
               </div>
-              <div className="xl:max-w-[500px] mt-3 leading-8 text-white/50 text-[1.1rem]">
+              <div className="xl:max-w-[500px] mt-3 leading-8 text-white text-[1.1rem]">
                 <p>
                   With 10+ years of experience in backend and frontend, building scalable, high-performance web applications with modern technologies.
                 </p>
@@ -38,7 +38,7 @@ const Home: React.FC = () => {
             </div>
           </div>
           {/* Image and particles */}
-          <div className="relative flex justify-center xl:justify-end w-full pt-24 xl:pt-0 mt-12 xl:mt-0 xl:pr-16">
+          <div className="relative flex justify-center xl:justify-end w-full pt-24 xl:pt-0 mt-12 xl:mt-0 xl:pr-32">
             <div className="relative">
               <Image
                 className="h-auto sm:h-[570px] w-full sm:w-auto"
@@ -51,19 +51,19 @@ const Home: React.FC = () => {
             <ParticlesContainer className="absolute bottom-10 top-0 xl:top-[-100px] right-0 xl:right-[-50px] left-0 z-[-9999]" />
           </div>
         </main>
-        {/* <div className="h-[1px] flex-1 bg-white/15 my-24"></div> */}
+        {/* <div className="h-[1px] flex-1 bg-white my-24"></div> */}
         <div className="flex items-center justify-between mt-12 xl:mt-14">
           <ResumeButtonDownload />
-          <HeroIcons iconColor="stroke-secondary" arrowColor="text-white/40" />
+          <HeroIcons iconColor="stroke-secondary" arrowColor="text-accent" />
         </div>
-        <div className="flex relative justify-center mb-12 mt-32 text-2xl text-secondary after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t after:border-white/20">
-          <span className="relative z-10 bg-primary px-8 rounded-lg text-accent">
+        <div className="flex relative justify-center mb-12 mt-32 text-2xl text-secondary after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t after:border-secondary">
+          <span className="relative z-10 bg-primary px-4 rounded-lg text-accent">
             Skills
           </span>
         </div>
         <div className="flex mb-7 mt-20 gap-12">
           <div className="w-full mb-7">
-            <div className="flex justify-between py-1 text-base text-white/50">
+            <div className="flex justify-between py-1 text-base text-white">
               <span>Backend</span>
               <span className="pr-5">85%</span>
             </div>
@@ -97,7 +97,7 @@ const Home: React.FC = () => {
             </svg>
           </div>
           <div className="w-full mb-7">
-            <div className="flex justify-between py-1 text-base text-white/50">
+            <div className="flex justify-between py-1 text-base text-white">
               <span>Backend</span>
               <span className="pr-5">85%</span>
             </div>
