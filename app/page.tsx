@@ -52,11 +52,19 @@ const Home: React.FC = () => {
               <ParticlesContainer className="absolute bottom-10 top-0 xl:top-[-100px] right-0 xl:right-[-50px] left-0 z-[-9999]" />
             </div>
           </main>
-          {/* <div className="h-[1px] flex-1 bg-white my-24"></div> */}
           <div className="flex items-center justify-between mt-12 xl:mt-14">
             <ResumeButtonDownload />
             <HeroIcons iconColor="stroke-secondary" arrowColor="text-accent" />
           </div>
+        </div>
+
+        <div className="relative -mx-48 -mt-6 z-[-9999]">
+          {/* right fade */}
+          <div className="absolute top-0 right-0 bottom-0 w-[20%] bg-gradient-to-r from-transparent to-primary z-50"></div>
+          {/* Left fade */}
+          <div className="absolute top-0 left-0 bottom-0 w-[20%] bg-gradient-to-l from-transparent to-primary z-50"></div>
+          <div className="gradient-bottom h-20"></div>
+          <div className="h-[1px] flex-1 bg-white/30"></div>
         </div>
         {/* <div className="relative flex justify-center mt-32">
         <div className="absolute bottom-0 w-[150px] h-[75px] bg-secondary rounded-t-full" />
@@ -65,7 +73,7 @@ const Home: React.FC = () => {
 
         {/* <div className="h-[1px] flex-1 bg-white/20 my-32 -mx-44"></div> */}
 
-        <div className="grid grid-cols-2 gap-x-20 gap-y-20">
+        <div className="grid grid-cols-2 gap-x-20 gap-y-20 mt-24">
           <div>
             <div className="flex justify-between py-1 text-base text-accent">
               <span>Backend</span>
