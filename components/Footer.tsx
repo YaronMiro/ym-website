@@ -6,6 +6,8 @@ const Footer: React.FC = () => {
     return (
         <footer className="relative mt-14 pb-16 pt-8">
             <div className="container mx-auto">
+                <div className="h-[1px] flex-1 bg-white/20 -mx-48"></div>
+
                 {/* <div className="h-[1px] flex-1 bg-white"></div> */}
                 <div className="flex justify-center md:justify-start">
                     <div className="inline-flex w-auto md:w-full md:flex flex-col md:flex-row-reverse md:justify-between gap-4 md:gap-0 mt-8">

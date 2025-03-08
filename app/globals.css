@@ -80,13 +80,16 @@
 
 
   .gradient-top {
-    @apply absolute left-0 right-0 top-0 w-full h-24 opacity-20;
-    background: linear-gradient(180deg, #2d6c5a 0%, rgba(255, 255, 255, 0) 100%);
+    @apply opacity-20;
+    /* background: linear-gradient(180deg, #2d6c5a 0%, rgba(255, 255, 255, 0) 100%); */
+    background: radial-gradient(circle,
+        #2d6c5a 0%,
+        rgba(255, 255, 255, 0) 100%);
   }
 
 
   .gradient-bottom {
-    @apply absolute after:left-0 after:right-0 after:bottom-0 after:w-full after:h-24 after:opacity-20;
+    @apply opacity-20;
     background: linear-gradient(0deg, #2d6c5a 0%, rgba(255, 255, 255, 0) 100%);
   }
 }
