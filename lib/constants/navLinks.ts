@@ -8,10 +8,6 @@ export const NAV_LINKS = [
         path: '/resume',
     },
     {
-        name: 'contact me',
-        path: '/contact',
-    },
-    {
         name: 'portfolio',
         path: '/portfolio',
     },
