@@ -58,21 +58,14 @@ const Home: React.FC = () => {
           </div>
         </div>
 
-        <div className="relative -mx-56 -mt-10 z-[-9999]">
+        <div className="relative -mx-96 -mt-4 z-[-9999]">
           {/* right fade */}
           <div className="absolute top-0 right-0 bottom-0 w-[15%] bg-gradient-to-r from-transparent to-primary z-50"></div>
           {/* Left fade */}
           <div className="absolute top-0 left-0 bottom-0 w-[15%] bg-gradient-to-l from-transparent to-primary z-50"></div>
           <div className="gradient-bottom h-20"></div>
-          {/* <div className="h-[1px] flex-1 bg-white/30"></div> */}
+          <div className="h-[1px] flex-1 bg-white/30"></div>
         </div>
-        {/* <div className="relative flex justify-center mt-32">
-        <div className="absolute bottom-0 w-[150px] h-[75px] bg-secondary rounded-t-full" />
-        <h2 className="relative text-3xl text-white z-10 pb-4">Skills</h2>
-      </div> */}
-
-        {/* <div className="h-[1px] flex-1 bg-white/20 my-32 -mx-44"></div> */}
-
         <div className="grid grid-cols-2 gap-x-20 gap-y-20 mt-24">
           <div>
             <div className="flex justify-between py-1 text-base text-accent">
